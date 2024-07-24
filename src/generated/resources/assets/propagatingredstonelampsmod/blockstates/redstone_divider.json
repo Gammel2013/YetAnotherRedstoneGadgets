@@ -1,0 +1,6601 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/base"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_off",
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_on",
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "2",
+        "facing": "north",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "3",
+        "facing": "north",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "5",
+        "facing": "north",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 180
+      },
+      "when": {
+        "divider": "7",
+        "facing": "north",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/base",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_off"
+      },
+      "when": {
+        "facing": "south",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_on"
+      },
+      "when": {
+        "facing": "south",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_off"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "2",
+        "facing": "south",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "3",
+        "facing": "south",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_off"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "5",
+        "facing": "south",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on"
+      },
+      "when": {
+        "divider": "7",
+        "facing": "south",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/base",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_off",
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_on",
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "2",
+        "facing": "west",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "3",
+        "facing": "west",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "5",
+        "facing": "west",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 90
+      },
+      "when": {
+        "divider": "7",
+        "facing": "west",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/base",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_off",
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_round_on",
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "2",
+        "facing": "east",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "3",
+        "facing": "east",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "5",
+        "facing": "east",
+        "power": "15",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_1_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_2_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_4_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "0",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "0",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "1",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "1",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "2",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "2",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "3",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "3",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "4",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "4",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "5",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "5",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "6",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_off",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "6",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "7",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "7",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "8",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "8",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "9",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "9",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "10",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "10",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "11",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "11",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "12",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "12",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "13",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "13",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "14",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "14",
+        "round_up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "15",
+        "round_up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "propagatingredstonelampsmod:block/redstone_divider/torch_output_on",
+        "y": 270
+      },
+      "when": {
+        "divider": "7",
+        "facing": "east",
+        "power": "15",
+        "round_up": "false"
+      }
+    }
+  ]
+}

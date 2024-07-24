@@ -25,6 +25,8 @@ public class ModBlockDropSubprovider extends BaseLootSubprovider {
         addSelfDroppingBlock(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK);
         addSelfDroppingBlock(ModBlocks.BLUE_PROPAGATING_REDSTONE_LAMP_BLOCK);
         addSelfDroppingBlock(ModBlocks.RED_PROPAGATING_REDSTONE_LAMP_BLOCK);
+
+        addSelfDroppingBlock(ModBlocks.REDSTONE_DIVIDER_BLOCK);
     }
 
     public LootPool.Builder dropSelf(DeferredBlock<Block> dBlock) {

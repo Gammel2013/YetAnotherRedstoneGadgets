@@ -5,6 +5,7 @@ import com.gammel2012.propagatingredstonelampsmod.PropagatingRedstoneLampsMod;
 import com.gammel2012.utils.providers.BaseRecipeProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 
@@ -46,6 +47,18 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 ModItems.PURPLE_PROPAGATING_REDSTONE_LAMP_ITEM.get(),
                 1,
                 new ShapelessRecipeIngredient(ModItems.BLUE_PROPAGATING_REDSTONE_LAMP_ITEM.get(), 1)
+        );
+
+        shaped(
+                toResourceLocation("redstone_divider"),
+                pRecipeOutput,
+                ModItems.REDSTONE_DIVIDER_ITEM.get(),
+                1,
+                " r ",
+                "rrr",
+                "srs",
+                new ShapedRecipeIngredient('r', Items.REDSTONE_TORCH),
+                new ShapedRecipeIngredient('s', Tags.Items.STONE)
         );
     }
 }

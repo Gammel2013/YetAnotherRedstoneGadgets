@@ -1,8 +1,6 @@
 package com.gammel2012.propagatingredstonelampsmod.blocks;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -14,7 +12,7 @@ import javax.annotation.Nullable;
 
 public class PropagatingRedstoneLampBlock extends Block {
 
-    public static final IntegerProperty SIGNAL_STRENGTH = ModBlockProperties.SIGNAL_STRENGTH;
+    public static final IntegerProperty SIGNAL_STRENGTH = ModBlockProperties.LAMP_SIGNAL_STRENGTH;
 
     public final int mask_value;
 

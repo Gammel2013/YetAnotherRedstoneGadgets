@@ -1,0 +1,75 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#torch_on",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#torch_on",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            11.0
+          ]
+        },
+        "north": {
+          "texture": "#torch_on",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            11.0
+          ]
+        },
+        "south": {
+          "texture": "#torch_on",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            11.0
+          ]
+        },
+        "up": {
+          "texture": "#torch_on",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#torch_on",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            11.0
+          ]
+        }
+      },
+      "from": [
+        7,
+        2,
+        13
+      ],
+      "to": [
+        9,
+        7,
+        15
+      ]
+    }
+  ],
+  "textures": {
+    "torch_on": "minecraft:block/redstone_torch"
+  }
+}

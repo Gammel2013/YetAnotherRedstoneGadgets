@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:stone"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "r": {
+      "item": "minecraft:redstone_torch"
+    },
+    "s": {
+      "tag": "forge:stone"
+    }
+  },
+  "pattern": [
+    " r ",
+    "rrr",
+    "srs"
+  ],
+  "result": {
+    "item": "propagatingredstonelampsmod:redstone_divider"
+  }
+}

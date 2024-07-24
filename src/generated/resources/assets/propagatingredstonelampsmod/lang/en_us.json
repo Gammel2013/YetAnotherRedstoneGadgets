@@ -2,5 +2,6 @@
   "block.propagatingredstonelampsmod.blue_propagating_redstone_lamp": "Blue Propagating Redstone Lamp",
   "block.propagatingredstonelampsmod.purple_propagating_redstone_lamp": "Purple Propagating Redstone Lamp",
   "block.propagatingredstonelampsmod.red_propagating_redstone_lamp": "Red Propagating Redstone Lamp",
+  "block.propagatingredstonelampsmod.redstone_divider": "Redstone Divider",
   "itemGroup.PropagatingRedstoneLamps": "Propagating Redstone Lamps Mod"
 }

@@ -36,6 +36,7 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Purple Propagating Redstone Lamp");
         add(ModBlocks.BLUE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Blue Propagating Redstone Lamp");
         add(ModBlocks.RED_PROPAGATING_REDSTONE_LAMP_BLOCK, "Red Propagating Redstone Lamp");
+        add(ModBlocks.REDSTONE_DIVIDER_BLOCK, "Redstone Divider");
 
         checkMissingTranslations();
     }

@@ -27,5 +27,7 @@ public class ModItemModelProvider extends BaseItemModelProvider {
                 getItemName(ModItems.RED_PROPAGATING_REDSTONE_LAMP_ITEM.get()),
                 blockLoc(ModItems.RED_PROPAGATING_REDSTONE_LAMP_ITEM.get()).withSuffix("_off")
         );
+
+        buildBasicItem(ModItems.REDSTONE_DIVIDER_ITEM);
     }
 }

@@ -42,6 +42,7 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_LIGHT_GRAY)
                     .strength(0.3f)
                     .sound(SoundType.STONE)
+                    .noOcclusion()
     );
 
     public static void register(IEventBus modEventBus) {

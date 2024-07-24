@@ -26,6 +26,9 @@ import net.minecraft.world.level.block.state.properties.ComparatorMode;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +38,7 @@ public class RedstoneDividerBlock extends Block {
     private static final DirectionProperty FACING_DIRECTION = ModBlockProperties.HORIZONTAL_FACING_DIRECTION;
     private static final SelectorIntegerProperty DIVIDER = ModBlockProperties.DIVIDER;
     private static final IntegerProperty POWER = ModBlockProperties.POWER;
+    private static final BooleanProperty ROUND_UP = ModBlockProperties.ROUND_UP;
 
     public static final Map<Integer, Float> PITCH_MAP = Map.of(
             2,
@@ -55,6 +59,7 @@ public class RedstoneDividerBlock extends Block {
                         .setValue(FACING_DIRECTION, Direction.NORTH)
                         .setValue(POWER, 0)
                         .setValue(DIVIDER, 2)
+                        .setValue(ROUND_UP, false)
         );
     }
 
@@ -63,15 +68,12 @@ public class RedstoneDividerBlock extends Block {
         pBuilder.add(FACING_DIRECTION);
         pBuilder.add(POWER);
         pBuilder.add(DIVIDER);
+        pBuilder.add(ROUND_UP);
     }
 
     protected int getInputSignal(Level pLevel, BlockPos pPos, BlockState pState) {
-        Direction direction = pState.getValue(FACING_DIRECTION);
-        BlockPos blockpos = pPos.relative(direction.getOpposite());
-
-        if (pLevel.getBlockState(blockpos).getBlock() instanceof RedstoneDividerBlock) {
-            direction = direction.getOpposite();
-        }
+        Direction direction = pState.getValue(FACING_DIRECTION).getOpposite();
+        BlockPos blockpos = pPos.relative(direction);
 
         int input = pLevel.getSignal(blockpos, direction);
         return input;
@@ -81,11 +83,22 @@ public class RedstoneDividerBlock extends Block {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pPlayer.getAbilities().mayBuild) {
             return InteractionResult.PASS;
-        } else {
+        } else if (!pPlayer.isShiftKeyDown()) {
+            // Regular rightclick: Cycle divider
             pState = pState.cycle(DIVIDER);
             int val = pState.getValue(DIVIDER);
 
             float pitch = PITCH_MAP.get(val);
+
+            pLevel.playSound(pPlayer, pPos, SoundEvents.COMPARATOR_CLICK, SoundSource.BLOCKS, 0.3F, pitch);
+            pLevel.setBlock(pPos, pState, 3);
+            return InteractionResult.sidedSuccess(pLevel.isClientSide);
+        } else {
+            // Shift rightclick: Cycle rounding
+            pState = pState.cycle(ROUND_UP);
+            boolean val = pState.getValue(ROUND_UP);
+
+            float pitch = val ? 0.55f : 0.50f;
 
             pLevel.playSound(pPlayer, pPos, SoundEvents.COMPARATOR_CLICK, SoundSource.BLOCKS, 0.3F, pitch);
             pLevel.setBlock(pPos, pState, 3);
@@ -138,10 +151,15 @@ public class RedstoneDividerBlock extends Block {
     }
 
     public int getOutputSignal(BlockState pState) {
+
+        boolean round_up = pState.getValue(ROUND_UP);
+
         int input = pState.getValue(POWER);
         int divider = pState.getValue(DIVIDER);
 
-        return input / divider;
+        float output = (float) input / (float) divider;
+
+        return round_up ? (int) Math.ceil(output) : (int) Math.floor(output);
     }
 
     @Override
@@ -152,5 +170,10 @@ public class RedstoneDividerBlock extends Block {
 
     protected boolean canSurviveOn(LevelReader pLevel, BlockPos pPos, BlockState pState) {
         return pState.isFaceSturdy(pLevel, pPos, Direction.UP, SupportType.RIGID);
+    }
+
+    @Override
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return box(0, 0, 0, 16, 2, 16);
     }
 }
