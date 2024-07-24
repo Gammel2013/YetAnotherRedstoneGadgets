@@ -18,6 +18,9 @@ import net.neoforged.neoforge.client.model.generators.MultiPartBlockStateBuilder
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ModBlockStateProvider extends BaseBlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, PropagatingRedstoneLampsMod.MODID, exFileHelper);
@@ -98,6 +101,15 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                     .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
                     .condition(ModBlockProperties.ROUND_UP, true);
 
+            List<Integer> torch_1_active = new ArrayList<>();
+            List<Integer> torch_1_inactive = new ArrayList<>();
+
+            List<Integer> torch_2_active = new ArrayList<>();
+            List<Integer> torch_2_inactive = new ArrayList<>();
+
+            List<Integer> torch_4_active = new ArrayList<>();
+            List<Integer> torch_4_inactive = new ArrayList<>();
+
             for (int divider : ModBlockProperties.DIVIDER.getPossibleValues()) {
 
                 boolean t1 = (divider & 1) != 0;
@@ -105,34 +117,28 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                 boolean t4 = (divider & 4) != 0;
 
                 if (!t1) {
-                    bld.part().modelFile(torch_1_off).rotationY(torch_rotation).addModel()
-                            .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                            .condition(ModBlockProperties.DIVIDER, divider);
+                    torch_1_inactive.add(divider);
                 } else {
-                    bld.part().modelFile(torch_1_on).rotationY(torch_rotation).addModel()
-                            .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                            .condition(ModBlockProperties.DIVIDER, divider);
+                    torch_1_active.add(divider);
                 }
 
                 if (!t2) {
-                    bld.part().modelFile(torch_2_off).rotationY(torch_rotation).addModel()
-                            .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                            .condition(ModBlockProperties.DIVIDER, divider);
+                    torch_2_inactive.add(divider);
                 } else {
-                    bld.part().modelFile(torch_2_on).rotationY(torch_rotation).addModel()
-                            .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                            .condition(ModBlockProperties.DIVIDER, divider);
+                    torch_2_active.add(divider);
                 }
 
                 if (!t4) {
-                    bld.part().modelFile(torch_4_off).rotationY(torch_rotation).addModel()
-                            .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                            .condition(ModBlockProperties.DIVIDER, divider);
+                    torch_4_inactive.add(divider);
                 } else {
-                    bld.part().modelFile(torch_4_on).rotationY(torch_rotation).addModel()
-                            .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                            .condition(ModBlockProperties.DIVIDER, divider);
+                    torch_4_active.add(divider);
                 }
+
+                List<Integer> torch_output_round_up_active = new ArrayList<>();
+                List<Integer> torch_output_round_down_active = new ArrayList<>();
+
+                List<Integer> torch_output_round_up_inactive = new ArrayList<>();
+                List<Integer> torch_output_round_down_inactive = new ArrayList<>();
 
                 for (int power : ModBlockProperties.POWER.getPossibleValues()) {
 
@@ -142,35 +148,78 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                     int down = (int) Math.floor(output);
 
                     if (up == 0) {
-                        bld.part().modelFile(torch_output_off).rotationY(torch_rotation).addModel()
-                                .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                                .condition(ModBlockProperties.DIVIDER, divider)
-                                .condition(ModBlockProperties.POWER, power)
-                                .condition(ModBlockProperties.ROUND_UP, true);
+                        torch_output_round_up_inactive.add(power);
                     } else {
-                        bld.part().modelFile(torch_output_on).rotationY(torch_rotation).addModel()
-                                .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                                .condition(ModBlockProperties.DIVIDER, divider)
-                                .condition(ModBlockProperties.POWER, power)
-                                .condition(ModBlockProperties.ROUND_UP, true);
+                        torch_output_round_up_active.add(power);
                     }
 
                     if (down == 0) {
-                        bld.part().modelFile(torch_output_off).rotationY(torch_rotation).addModel()
-                                .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                                .condition(ModBlockProperties.DIVIDER, divider)
-                                .condition(ModBlockProperties.POWER, power)
-                                .condition(ModBlockProperties.ROUND_UP, false);
-
+                        torch_output_round_down_inactive.add(power);
                     } else {
-                        bld.part().modelFile(torch_output_on).rotationY(torch_rotation).addModel()
-                                .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
-                                .condition(ModBlockProperties.DIVIDER, divider)
-                                .condition(ModBlockProperties.POWER, power)
-                                .condition(ModBlockProperties.ROUND_UP, false);
+                        torch_output_round_down_active.add(power);
                     }
                 }
+
+                Integer[] torch_on_up = torch_output_round_up_active.toArray(new Integer[0]);
+                Integer[] torch_off_up = torch_output_round_up_inactive.toArray(new Integer[0]);
+
+                Integer[] torch_on_down = torch_output_round_down_active.toArray(new Integer[0]);
+                Integer[] torch_off_down = torch_output_round_down_inactive.toArray(new Integer[0]);
+
+                bld.part().modelFile(torch_output_off).rotationY(torch_rotation).addModel()
+                        .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                        .condition(ModBlockProperties.DIVIDER, divider)
+                        .condition(ModBlockProperties.POWER, torch_off_up)
+                        .condition(ModBlockProperties.ROUND_UP, true);
+
+                bld.part().modelFile(torch_output_on).rotationY(torch_rotation).addModel()
+                        .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                        .condition(ModBlockProperties.DIVIDER, divider)
+                        .condition(ModBlockProperties.POWER, torch_on_up)
+                        .condition(ModBlockProperties.ROUND_UP, true);
+
+                bld.part().modelFile(torch_output_off).rotationY(torch_rotation).addModel()
+                        .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                        .condition(ModBlockProperties.DIVIDER, divider)
+                        .condition(ModBlockProperties.POWER, torch_off_down)
+                        .condition(ModBlockProperties.ROUND_UP, false);
+
+                bld.part().modelFile(torch_output_on).rotationY(torch_rotation).addModel()
+                        .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                        .condition(ModBlockProperties.DIVIDER, divider)
+                        .condition(ModBlockProperties.POWER, torch_on_down)
+                        .condition(ModBlockProperties.ROUND_UP, false);
             }
+
+            Integer[] torch_1_on_arr = torch_1_active.toArray(new Integer[0]);
+            Integer[] torch_1_off_arr = torch_1_inactive.toArray(new Integer[0]);
+
+            bld.part().modelFile(torch_1_on).rotationY(torch_rotation).addModel()
+                    .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                    .condition(ModBlockProperties.DIVIDER, torch_1_on_arr);
+            bld.part().modelFile(torch_1_off).rotationY(torch_rotation).addModel()
+                    .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                    .condition(ModBlockProperties.DIVIDER, torch_1_off_arr);
+
+            Integer[] torch_2_on_arr = torch_2_active.toArray(new Integer[0]);
+            Integer[] torch_2_off_arr = torch_2_inactive.toArray(new Integer[0]);
+
+            bld.part().modelFile(torch_2_on).rotationY(torch_rotation).addModel()
+                    .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                    .condition(ModBlockProperties.DIVIDER, torch_2_on_arr);
+            bld.part().modelFile(torch_2_off).rotationY(torch_rotation).addModel()
+                    .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                    .condition(ModBlockProperties.DIVIDER, torch_2_off_arr);
+
+            Integer[] torch_4_on_arr = torch_4_active.toArray(new Integer[0]);
+            Integer[] torch_4_off_arr = torch_4_inactive.toArray(new Integer[0]);
+
+            bld.part().modelFile(torch_4_on).rotationY(torch_rotation).addModel()
+                    .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                    .condition(ModBlockProperties.DIVIDER, torch_4_on_arr);
+            bld.part().modelFile(torch_4_off).rotationY(torch_rotation).addModel()
+                    .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                    .condition(ModBlockProperties.DIVIDER, torch_4_off_arr);
         }
     }
 }
