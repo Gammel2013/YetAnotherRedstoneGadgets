@@ -3,7 +3,13 @@
     {
       "faces": {
         "down": {
-          "texture": "#torch_off"
+          "texture": "#torch_off",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            8.0
+          ]
         },
         "east": {
           "texture": "#torch_off",
@@ -54,12 +60,12 @@
       "from": [
         7,
         2,
-        8
+        13
       ],
       "to": [
         9,
         7,
-        10
+        15
       ]
     }
   ],

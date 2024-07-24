@@ -65,21 +65,19 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         builder.texture("particle", modLoc("block/divider_slab_base"));
         builder.renderType("solid");
 
-        redstone_torch_off(block_name, "torch_1_off", 3, 2, 2);
-        redstone_torch_off(block_name, "torch_2_off", 7, 2, 2);
-        redstone_torch_off(block_name, "torch_4_off", 11, 2, 2);
+        redstone_torch_off(block_name, "torch_1_off", 3, 0, 2);
+        redstone_torch_off(block_name, "torch_2_off", 7, 0, 2);
+        redstone_torch_off(block_name, "torch_4_off", 11, 0, 2);
 
-        redstone_torch_off(block_name, "torch_output_off", 7, 2, 8);
+        redstone_torch_off(block_name, "torch_round_off", 7, 0, 8);
+        redstone_torch_off(block_name, "torch_output_off", 7, 2, 13);
 
-        redstone_torch_off(block_name, "torch_round_off", 7, 2, 13);
+        redstone_torch_on(block_name, "torch_1_on", 3, 0, 2);
+        redstone_torch_on(block_name, "torch_2_on", 7, 0, 2);
+        redstone_torch_on(block_name, "torch_4_on", 11, 0, 2);
 
-        redstone_torch_on(block_name, "torch_1_on", 3, 2, 2);
-        redstone_torch_on(block_name, "torch_2_on", 7, 2, 2);
-        redstone_torch_on(block_name, "torch_4_on", 11, 2, 2);
-
-        redstone_torch_on(block_name, "torch_output_on", 7, 2, 8);
-
-        redstone_torch_on(block_name, "torch_round_on", 7, 2, 13);
+        redstone_torch_on(block_name, "torch_round_on", 7, 0, 8);
+        redstone_torch_on(block_name, "torch_output_on", 7, 2, 13);
     }
 
     private void redstone_torch_off(String path, String name, int x, int y, int z) {
@@ -113,6 +111,39 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
                 .face(Direction.DOWN).texture("#torch_on").uvs(7, 6, 9, 8).end()
                 .end();
 
+        builder.element()
+                .from(x, y+5, z)
+                .to(x+2, y+6, z+2)
+                .face(Direction.NORTH).texture("#torch_on").uvs(7, 5, 9, 6).end()
+                .face(Direction.SOUTH).texture("#torch_on").uvs(7, 5, 9, 6).end()
+                .face(Direction.EAST).texture("#torch_on").uvs(7, 5, 9, 6).end()
+                .face(Direction.WEST).texture("#torch_on").uvs(7, 5, 9, 6).end();
+
+        builder.element()
+                .from(x+2, y+3, z)
+                .to(x+3, y+5, z+2)
+                .face(Direction.NORTH).texture("#torch_on").uvs(6, 6, 6, 8).end()
+                .face(Direction.SOUTH).texture("#torch_on").uvs(6, 6, 6, 8).end();
+
+        builder.element()
+                .from(x-1, y+3, z)
+                .to(x, y+5, z+2)
+                .face(Direction.NORTH).texture("#torch_on").uvs(6, 6, 6, 8).end()
+                .face(Direction.SOUTH).texture("#torch_on").uvs(6, 6, 6, 8).end();
+
+        builder.element()
+                .from(x, y+3, z+2)
+                .to(x+2, y+5, z+3)
+                .face(Direction.EAST).texture("#torch_on").uvs(6, 6, 6, 8).end()
+                .face(Direction.WEST).texture("#torch_on").uvs(6, 6, 6, 8).end();
+
+        builder.element()
+                .from(x, y+3, z-1)
+                .to(x+2, y+5, z)
+                .face(Direction.EAST).texture("#torch_on").uvs(6, 6, 6, 8).end()
+                .face(Direction.WEST).texture("#torch_on").uvs(6, 6, 6, 8).end();
+
         builder.texture("torch_on", mcLoc("block/redstone_torch"));
+        builder.renderType("cutout");
     }
 }
