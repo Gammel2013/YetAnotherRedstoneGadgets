@@ -14,30 +14,23 @@ import javax.annotation.Nullable;
 
 public class PropagatingRedstoneLampBlock extends Block {
 
-    public static final IntegerProperty SIGNAL_STRENGTH = IntegerProperty.create("signal_strength", 0, 15);
+    public static final IntegerProperty SIGNAL_STRENGTH = ModBlockProperties.SIGNAL_STRENGTH;
 
     public final int mask_value;
 
     public PropagatingRedstoneLampBlock(Properties properties, int interaction_mask) {
         super(properties);
 
-        if (interaction_mask < 0 || 15 < interaction_mask) {
-            throw new RuntimeException("Value " + interaction_mask + " not allowed for interaction_mask");
-        }
-
         mask_value = interaction_mask;
-        this.defaultBlockState()
-                .setValue(SIGNAL_STRENGTH, 0);
+
+        this.registerDefaultState(
+                this.getStateDefinition().any().setValue(SIGNAL_STRENGTH, 0)
+        );
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(SIGNAL_STRENGTH);
-    }
-
-    @Override
-    public void tick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
-
     }
 
     @Nullable
@@ -68,7 +61,6 @@ public class PropagatingRedstoneLampBlock extends Block {
 
             if (new_strength != old_strength) {
                 pLevel.setBlock(pPos, pState.setValue(SIGNAL_STRENGTH, new_strength), 3);
-                //pLevel.sendBlockUpdated(pPos, pState, pState.setValue(SIGNAL_STRENGTH, new_strength), Block.UPDATE_ALL);
             }
         }
     }
