@@ -4,6 +4,7 @@ import com.gammel2012.utils.SelectorIntegerProperty;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -88,9 +89,17 @@ public class RedstoneDividerBlock extends Block {
             pState = pState.cycle(DIVIDER);
             int val = pState.getValue(DIVIDER);
 
+            // Play sound effect
             float pitch = PITCH_MAP.get(val);
-
             pLevel.playSound(pPlayer, pPos, SoundEvents.COMPARATOR_CLICK, SoundSource.BLOCKS, 0.3F, pitch);
+
+            // Display status message
+            if (pLevel.isClientSide) {
+                String message = "block.mod.divider.divider";
+                pPlayer.displayClientMessage(Component.translatable(message, val), true);
+            }
+
+            // Update block
             pLevel.setBlock(pPos, pState, 3);
             return InteractionResult.sidedSuccess(pLevel.isClientSide);
         } else {
@@ -98,9 +107,17 @@ public class RedstoneDividerBlock extends Block {
             pState = pState.cycle(ROUND_UP);
             boolean val = pState.getValue(ROUND_UP);
 
+            // Play sound effect
             float pitch = val ? 0.55f : 0.50f;
-
             pLevel.playSound(pPlayer, pPos, SoundEvents.COMPARATOR_CLICK, SoundSource.BLOCKS, 0.3F, pitch);
+
+            // Display status message
+            if (pLevel.isClientSide) {
+                String message = val ? "block.mod.divider.round_up" : "block.mod.divider.round_down";
+                pPlayer.displayClientMessage(Component.translatable(message), true);
+            }
+
+            // Update block
             pLevel.setBlock(pPos, pState, 3);
             return InteractionResult.sidedSuccess(pLevel.isClientSide);
         }

@@ -1,4 +1,7 @@
 {
+  "block.mod.divider.divider": "Dividing by %1$s",
+  "block.mod.divider.round_down": "Rounding down",
+  "block.mod.divider.round_up": "Rounding up",
   "block.propagatingredstonelampsmod.blue_propagating_redstone_lamp": "Blue Propagating Redstone Lamp",
   "block.propagatingredstonelampsmod.purple_propagating_redstone_lamp": "Purple Propagating Redstone Lamp",
   "block.propagatingredstonelampsmod.red_propagating_redstone_lamp": "Red Propagating Redstone Lamp",

@@ -32,6 +32,11 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         // Mod name
         add("itemGroup.PropagatingRedstoneLamps", "Propagating Redstone Lamps Mod");
 
+        // Display messages for the divider
+        add("block.mod.divider.round_up", "Rounding up");
+        add("block.mod.divider.round_down", "Rounding down");
+        add("block.mod.divider.divider", "Dividing by %1$s");
+
         // Normal blocks
         add(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Purple Propagating Redstone Lamp");
         add(ModBlocks.BLUE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Blue Propagating Redstone Lamp");
