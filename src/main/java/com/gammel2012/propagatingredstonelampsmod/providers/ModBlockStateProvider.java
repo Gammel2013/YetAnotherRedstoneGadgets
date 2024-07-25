@@ -46,9 +46,10 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
 
         ModelFile model_on = models().getExistingFile(modLoc("block/" + name + "_on"));
         ModelFile model_off = models().getExistingFile(modLoc("block/" + name + "_off"));
+
         getVariantBuilder(block).forAllStates(
                 state -> {
-                    IntegerProperty signal_prop = PropagatingRedstoneLampBlock.SIGNAL_STRENGTH;
+                    IntegerProperty signal_prop = ModBlockProperties.LAMP_SIGNAL_STRENGTH;
                     int strength = state.getValue(signal_prop);
 
                     if (strength > 0) {
