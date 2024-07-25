@@ -38,6 +38,7 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
         propagatingRedstoneLamp(ModBlocks.RED_PROPAGATING_REDSTONE_LAMP_BLOCK);
 
         redstoneDivider(ModBlocks.REDSTONE_DIVIDER_BLOCK);
+        redstoneDial(ModBlocks.REDSTONE_DIAL_BLOCK);
     }
 
     public void propagatingRedstoneLamp(DeferredBlock<Block> dBlock) {
@@ -222,5 +223,51 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                     .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
                     .condition(ModBlockProperties.DIVIDER, torch_4_off_arr);
         }
+    }
+
+    private void redstoneDial(DeferredBlock<Block> dBlock) {
+        Block block = dBlock.get();
+        String name = getBlockName(block);
+
+        MultiPartBlockStateBuilder bld = getMultipartBuilder(block);
+
+        for (Direction dir : ModBlockProperties.HORIZONTAL_FACING_DIRECTION.getPossibleValues()) {
+
+            int rotation_y = ((int) dir.toYRot() + 180) % 360;
+
+            for (int power : ModBlockProperties.POWER.getPossibleValues()) {
+
+                ModelFile model_base = models().getExistingFile(modLoc("block/" + name + "/base_" + power));
+
+                bld.part().modelFile(model_base).rotationY(rotation_y).addModel()
+                        .condition(ModBlockProperties.HORIZONTAL_FACING_DIRECTION, dir)
+                        .condition(ModBlockProperties.POWER, power);
+            }
+        }
+
+        ModelFile torch_on = models().getExistingFile(modLoc("block/" + name + "/torch_on"));
+        ModelFile torch_off = models().getExistingFile(modLoc("block/" + name + "/torch_off"));
+
+        bld.part().modelFile(torch_on).addModel()
+                .condition(
+                        ModBlockProperties.POWER,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
+                );
+        bld.part().modelFile(torch_off).addModel()
+                .condition(ModBlockProperties.POWER, 0);
     }
 }

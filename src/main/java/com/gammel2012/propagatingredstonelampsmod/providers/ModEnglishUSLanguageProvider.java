@@ -37,11 +37,14 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add("block.mod.divider.round_down", "Rounding down");
         add("block.mod.divider.divider", "Dividing by %1$s");
 
+        add("block.mod.dial.power", "Outputting a signal of %1$s");
+
         // Normal blocks
         add(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Purple Propagating Redstone Lamp");
         add(ModBlocks.BLUE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Blue Propagating Redstone Lamp");
         add(ModBlocks.RED_PROPAGATING_REDSTONE_LAMP_BLOCK, "Red Propagating Redstone Lamp");
         add(ModBlocks.REDSTONE_DIVIDER_BLOCK, "Redstone Divider");
+        add(ModBlocks.REDSTONE_DIAL_BLOCK, "Redstone Dial");
 
         checkMissingTranslations();
     }

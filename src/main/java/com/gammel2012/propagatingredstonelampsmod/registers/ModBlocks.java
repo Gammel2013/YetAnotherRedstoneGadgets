@@ -3,6 +3,7 @@ package com.gammel2012.propagatingredstonelampsmod.registers;
 import com.gammel2012.propagatingredstonelampsmod.blocks.ModBlockBehaviourProperties;
 import com.gammel2012.propagatingredstonelampsmod.blocks.PropagatingRedstoneLampBlock;
 import com.gammel2012.propagatingredstonelampsmod.PropagatingRedstoneLampsMod;
+import com.gammel2012.propagatingredstonelampsmod.blocks.RedstoneDialBlock;
 import com.gammel2012.propagatingredstonelampsmod.blocks.RedstoneDividerBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -38,6 +39,16 @@ public class ModBlocks {
     public static final DeferredBlock<Block> REDSTONE_DIVIDER_BLOCK = registerBlock(
             "redstone_divider",
             RedstoneDividerBlock::new,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
+                    .strength(0.3f)
+                    .sound(SoundType.STONE)
+                    .noOcclusion()
+    );
+
+    public static final DeferredBlock<Block> REDSTONE_DIAL_BLOCK = registerBlock(
+            "redstone_dial",
+            RedstoneDialBlock::new,
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_LIGHT_GRAY)
                     .strength(0.3f)

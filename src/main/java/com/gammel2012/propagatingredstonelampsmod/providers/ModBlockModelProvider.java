@@ -5,6 +5,7 @@ import com.gammel2012.propagatingredstonelampsmod.PropagatingRedstoneLampsMod;
 import com.gammel2012.utils.providers.BaseBlockModelProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelBuilder;
@@ -46,6 +47,7 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         );
 
         registerRedstoneDividerModels();
+        registerRedstoneDialModels();
     }
 
     private void registerRedstoneDividerModels() {
@@ -145,5 +147,29 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
 
         builder.texture("torch_on", mcLoc("block/redstone_torch"));
         builder.renderType("cutout");
+    }
+
+    private void registerRedstoneDialModels() {
+        String block_name = "block/" + getBlockName(ModBlocks.REDSTONE_DIAL_BLOCK.get());
+
+        for (int power = 0; power < 16; power++) {
+            String name = block_name + "/base_" + power;
+
+            ResourceLocation texture = modLoc("block/redstone_dial_base_" + power);
+
+            BlockModelBuilder builder = getBuilder(name);
+            builder.element()
+                    .from(0, 0, 0)
+                    .to(16, 2, 16)
+                    .allFaces((direction, faceBuilder) -> faceBuilder.texture("#txt"))
+                    .end();
+
+            builder.texture("txt", texture);
+            builder.texture("particle", texture);
+            builder.renderType("solid");
+        }
+
+        redstone_torch_off(block_name, "torch_off", 7, 0, 7);
+        redstone_torch_on(block_name, "torch_on", 7, 0, 7);
     }
 }
