@@ -29,5 +29,6 @@ public class ModItemModelProvider extends BaseItemModelProvider {
         );
 
         buildBasicItem(ModItems.REDSTONE_DIVIDER_ITEM);
+        buildBasicItem(ModItems.REDSTONE_DIAL_ITEM);
     }
 }

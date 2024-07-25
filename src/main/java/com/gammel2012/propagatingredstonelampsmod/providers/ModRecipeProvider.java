@@ -60,5 +60,18 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 new ShapedRecipeIngredient('r', Items.REDSTONE_TORCH),
                 new ShapedRecipeIngredient('s', Tags.Items.STONE)
         );
+
+        shaped(
+                toResourceLocation("redstone_dial"),
+                pRecipeOutput,
+                ModItems.REDSTONE_DIAL_ITEM.get(),
+                1,
+                "rrr",
+                "rtr",
+                "sss",
+                new ShapedRecipeIngredient('s', Tags.Items.STONE),
+                new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
+                new ShapedRecipeIngredient('t', Items.REDSTONE_TORCH)
+        );
     }
 }
