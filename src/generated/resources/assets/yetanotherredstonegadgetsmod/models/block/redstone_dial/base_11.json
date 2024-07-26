@@ -1,0 +1,41 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#txt"
+        },
+        "east": {
+          "texture": "#txt"
+        },
+        "north": {
+          "texture": "#txt"
+        },
+        "south": {
+          "texture": "#txt"
+        },
+        "up": {
+          "texture": "#txt"
+        },
+        "west": {
+          "texture": "#txt"
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        2,
+        16
+      ]
+    }
+  ],
+  "render_type": "minecraft:solid",
+  "textures": {
+    "particle": "yetanotherredstonegadgetsmod:block/redstone_dial_base_11",
+    "txt": "yetanotherredstonegadgetsmod:block/redstone_dial_base_11"
+  }
+}

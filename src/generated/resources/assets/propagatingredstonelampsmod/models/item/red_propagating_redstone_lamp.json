@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "propagatingredstonelampsmod:block/red_propagating_redstone_lamp_off"
-  }
-}

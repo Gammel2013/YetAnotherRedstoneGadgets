@@ -1,0 +1,13 @@
+{
+  "block.yargmod.dial.power": "Output strength: %1$s",
+  "block.yargmod.divider.divider": "Dividing by %1$s",
+  "block.yargmod.divider.round_down": "Rounding down",
+  "block.yargmod.divider.round_up": "Rounding up",
+  "block.yetanotherredstonegadgetsmod.blue_propagating_redstone_lamp": "Blue Propagating Redstone Lamp",
+  "block.yetanotherredstonegadgetsmod.purple_propagating_redstone_lamp": "Purple Propagating Redstone Lamp",
+  "block.yetanotherredstonegadgetsmod.red_propagating_redstone_lamp": "Red Propagating Redstone Lamp",
+  "block.yetanotherredstonegadgetsmod.redstone_dial": "Redstone Dial",
+  "block.yetanotherredstonegadgetsmod.redstone_divider": "Redstone Divider",
+  "itemGroup.YetAnotherRedstoneGadgetsMod": "Yet Another Redstone Gadgets Mod (YARG)",
+  "itemGroup.YetAnotherRedstoneGadgetsMod.tab": "Yet Another Redstone Gadgets Mod"
+}

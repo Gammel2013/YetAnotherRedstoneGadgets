@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": []
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yetanotherredstonegadgetsmod:blue_propagating_redstone_lamp"
+    }
+  ],
+  "result": {
+    "item": "yetanotherredstonegadgetsmod:purple_propagating_redstone_lamp"
+  }
+}

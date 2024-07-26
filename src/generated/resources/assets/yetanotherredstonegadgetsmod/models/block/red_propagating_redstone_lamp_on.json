@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "yetanotherredstonegadgetsmod:block/red_propagating_redstone_lamp_on"
+  }
+}
