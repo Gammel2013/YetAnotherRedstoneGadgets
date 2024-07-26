@@ -1,10 +1,7 @@
 package com.gammel2012.yetanotherredstonegadgetsmod.registers;
 
 import com.gammel2012.yetanotherredstonegadgetsmod.YetAnotherRedstoneGadgetsMod;
-import com.gammel2012.yetanotherredstonegadgetsmod.blocks.ModBlockBehaviourProperties;
-import com.gammel2012.yetanotherredstonegadgetsmod.blocks.PropagatingRedstoneLampBlock;
-import com.gammel2012.yetanotherredstonegadgetsmod.blocks.RedstoneDialBlock;
-import com.gammel2012.yetanotherredstonegadgetsmod.blocks.RedstoneDividerBlock;
+import com.gammel2012.yetanotherredstonegadgetsmod.blocks.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -54,6 +51,20 @@ public class ModBlocks {
                     .strength(0.3f)
                     .sound(SoundType.STONE)
                     .noOcclusion()
+    );
+
+    public static final DeferredBlock<Block> REDSTONE_DIAL_LAMP_BLOCK = registerBlock(
+            "redstone_dial_lamp",
+            RedstoneDialLampBlock::new,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .sound(SoundType.GLASS)
+                    .lightLevel((blockState) -> {
+                        return blockState.getValue(ModBlockProperties.POWER);
+                    })
+                    .strength(0.3F)
+                    .isValidSpawn((state, getter, blockPos, entityType) -> true)
+                    .isRedstoneConductor((state, getter, blockpos) -> false)
     );
 
     public static void register(IEventBus modEventBus) {

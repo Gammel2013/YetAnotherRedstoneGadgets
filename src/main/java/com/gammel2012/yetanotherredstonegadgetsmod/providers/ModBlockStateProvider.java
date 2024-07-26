@@ -34,6 +34,8 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
         propagatingRedstoneLamp(ModBlocks.BLUE_PROPAGATING_REDSTONE_LAMP_BLOCK);
         propagatingRedstoneLamp(ModBlocks.RED_PROPAGATING_REDSTONE_LAMP_BLOCK);
 
+        redstoneDialLamp(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK);
+
         redstoneDivider(ModBlocks.REDSTONE_DIVIDER_BLOCK);
         redstoneDial(ModBlocks.REDSTONE_DIAL_BLOCK);
     }
@@ -266,5 +268,25 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                 );
         bld.part().modelFile(torch_off).addModel()
                 .condition(ModBlockProperties.POWER, 0);
+    }
+
+    private void redstoneDialLamp(DeferredBlock<Block> dBlock) {
+        Block block = dBlock.get();
+        String name = getBlockName(block);
+
+        getVariantBuilder(block).forAllStates(
+                state -> {
+                    IntegerProperty signal_prop = ModBlockProperties.POWER;
+                    DirectionProperty facing = ModBlockProperties.HORIZONTAL_FACING_DIRECTION;
+
+                    int power = state.getValue(signal_prop);
+                    int angle_y = (int) state.getValue(facing).toYRot();
+
+                    return ConfiguredModel.builder()
+                            .modelFile(models().getExistingFile(modLoc("block/" + name + "_" + power)))
+                            .rotationY(angle_y)
+                            .build();
+                }
+        );
     }
 }

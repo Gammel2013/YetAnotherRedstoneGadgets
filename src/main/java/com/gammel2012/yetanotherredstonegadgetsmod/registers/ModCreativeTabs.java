@@ -20,6 +20,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.RED_PROPAGATING_REDSTONE_LAMP_ITEM.get());
                 output.accept(ModItems.BLUE_PROPAGATING_REDSTONE_LAMP_ITEM.get());
                 output.accept(ModItems.PURPLE_PROPAGATING_REDSTONE_LAMP_ITEM.get());
+                output.accept(ModItems.REDSTONE_DIAL_LAMP_ITEM.get());
                 output.accept(ModItems.REDSTONE_DIVIDER_ITEM.get());
                 output.accept(ModItems.REDSTONE_DIAL_ITEM.get());
             }).build());

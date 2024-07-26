@@ -45,6 +45,7 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
 
         registerRedstoneDividerModels();
         registerRedstoneDialModels();
+        registerDialLampModels();
     }
 
     private void registerRedstoneDividerModels() {
@@ -168,5 +169,18 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
 
         redstone_torch_off(block_name, "torch_off", 7, 0, 7);
         redstone_torch_on(block_name, "torch_on", 7, 0, 7);
+    }
+
+    private void registerDialLampModels() {
+
+        String name = getBlockName(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK.get());
+        ResourceLocation base_texture_path = blockLoc(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK.get());
+
+        for (int power = 0; power < 16; power++) {
+            cubeAll(
+                    name + "_" + power,
+                    base_texture_path.withSuffix("_" + power)
+            );
+        }
     }
 }

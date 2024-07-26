@@ -28,6 +28,11 @@ public class ModItemModelProvider extends BaseItemModelProvider {
                 blockLoc(ModItems.RED_PROPAGATING_REDSTONE_LAMP_ITEM.get()).withSuffix("_off")
         );
 
+        cubeAll(
+                getItemName(ModItems.REDSTONE_DIAL_LAMP_ITEM.get()),
+                blockLoc(ModItems.REDSTONE_DIAL_LAMP_ITEM.get()).withSuffix("_0")
+        );
+
         buildBasicItem(ModItems.REDSTONE_DIVIDER_ITEM);
         buildBasicItem(ModItems.REDSTONE_DIAL_ITEM);
     }
