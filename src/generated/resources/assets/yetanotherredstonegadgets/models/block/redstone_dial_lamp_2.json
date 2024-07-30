@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "yetanotherredstonegadgets:block/redstone_dial_lamp_2"
+  }
+}
