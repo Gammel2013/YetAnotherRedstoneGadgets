@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:dusts/redstone"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:glowstone"
+    },
+    "r": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "rrr",
+    "rgr"
+  ],
+  "result": {
+    "item": "yetanotherredstonegadgets:redstone_dial_lamp"
+  }
+}

@@ -5,6 +5,7 @@ import com.gammel2012.yetanotherredstonegadgets.registers.ModItems;
 import com.gammel2012.utils.providers.BaseRecipeProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 
@@ -71,6 +72,18 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 new ShapedRecipeIngredient('s', Tags.Items.STONE),
                 new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
                 new ShapedRecipeIngredient('t', Items.REDSTONE_TORCH)
+        );
+
+        shaped(
+                toResourceLocation("dial_lamp"),
+                pRecipeOutput,
+                ModItems.REDSTONE_DIAL_LAMP_ITEM.get(),
+                1,
+                "rrr",
+                "rgr",
+                "",
+                new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
+                new ShapedRecipeIngredient('g', Items.GLOWSTONE)
         );
     }
 }
