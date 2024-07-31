@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SupportType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
@@ -26,6 +27,7 @@ public class RedstoneDialBlock extends Block {
 
     private static final IntegerProperty POWER = ModBlockProperties.POWER;
     private static final DirectionProperty FACING_DIRECTION = ModBlockProperties.HORIZONTAL_FACING_DIRECTION;
+    private static final BooleanProperty POWERED = ModBlockProperties.POWERED;
 
     public RedstoneDialBlock(Properties properties) {
         super(properties);
@@ -34,6 +36,7 @@ public class RedstoneDialBlock extends Block {
                 this.getStateDefinition().any()
                         .setValue(FACING_DIRECTION, Direction.NORTH)
                         .setValue(POWER, 0)
+                        .setValue(POWERED, false)
         );
     }
 
@@ -41,6 +44,7 @@ public class RedstoneDialBlock extends Block {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(FACING_DIRECTION);
         pBuilder.add(POWER);
+        pBuilder.add(POWERED);
     }
 
     @Override
@@ -49,6 +53,20 @@ public class RedstoneDialBlock extends Block {
             if (!pState.canSurvive(pLevel, pPos)) {
                 dropResources(pState, pLevel, pPos);
                 pLevel.removeBlock(pPos, false);
+            }
+
+            Direction facing = pState.getValue(FACING_DIRECTION).getOpposite();
+            BlockPos behind = pPos.relative(facing);
+            boolean powered = pState.getValue(POWERED);
+
+            int pow = pLevel.getSignal(behind, facing);
+
+            if (pow > 0 && !powered) {
+                pState = pState.cycle(POWER).setValue(POWERED, true);
+                pLevel.setBlock(pPos, pState, 3);
+            } else if (pow == 0 && powered) {
+                pState = pState.setValue(POWERED, false);
+                pLevel.setBlock(pPos, pState, 3);
             }
         }
     }
