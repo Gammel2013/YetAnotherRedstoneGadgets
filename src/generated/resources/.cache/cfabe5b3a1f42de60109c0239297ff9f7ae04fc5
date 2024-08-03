@@ -1,7 +1,8 @@
-// 1.20.4	2024-07-30T19:01:50.7345933	Item Models: yetanotherredstonegadgets
+// 1.20.4	2024-08-03T12:51:12.897004	Item Models: yetanotherredstonegadgets
 edb0f621c85a1c80a0307c9ae030e97065a91a1a assets/yetanotherredstonegadgets/models/item/blue_propagating_redstone_lamp.json
 c8eff6feaa44d68ef7a5b6e52dd696b04df61baa assets/yetanotherredstonegadgets/models/item/purple_propagating_redstone_lamp.json
 636d4f7a6394290287dd31fe8f17de144337cc65 assets/yetanotherredstonegadgets/models/item/redstone_dial.json
 c9216591fba20b392cb985a8450b5008095895ef assets/yetanotherredstonegadgets/models/item/redstone_dial_lamp.json
 5f2685bd551969cf2b8ee97518994b3ca261714b assets/yetanotherredstonegadgets/models/item/redstone_divider.json
 ee14b566e40c92ff54aff64eb6e09395b8ecdd31 assets/yetanotherredstonegadgets/models/item/red_propagating_redstone_lamp.json
+5eaf22a7013a646c6713fa8926f6e01da8d42725 assets/yetanotherredstonegadgets/models/item/seven_segment_lamp.json
