@@ -85,5 +85,18 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
                 new ShapedRecipeIngredient('g', Items.GLOWSTONE)
         );
+
+        shaped(
+                toResourceLocation("seven_segment_lamp"),
+                pRecipeOutput,
+                ModItems.SEVEN_SEGMENT_LAMP_ITEM.get(),
+                1,
+                "qrq",
+                "rgr",
+                " r ",
+                new ShapedRecipeIngredient('q', Tags.Items.GEMS_QUARTZ),
+                new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
+                new ShapedRecipeIngredient('g', Items.GLOWSTONE)
+        );
     }
 }

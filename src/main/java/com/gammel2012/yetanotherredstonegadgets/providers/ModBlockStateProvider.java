@@ -35,6 +35,7 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
         propagatingRedstoneLamp(ModBlocks.RED_PROPAGATING_REDSTONE_LAMP_BLOCK);
 
         redstoneDialLamp(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK);
+        redstoneDialLamp(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK);
 
         redstoneDivider(ModBlocks.REDSTONE_DIVIDER_BLOCK);
         redstoneDial(ModBlocks.REDSTONE_DIAL_BLOCK);

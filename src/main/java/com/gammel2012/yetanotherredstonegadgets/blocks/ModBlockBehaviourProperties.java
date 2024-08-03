@@ -25,6 +25,11 @@ public class ModBlockBehaviourProperties {
             .isValidSpawn((state, getter, blockPos, entityType) -> true)
             .isRedstoneConductor((state, getter, blockpos) -> false);
 
+    public static final BlockBehaviour.Properties SEVEN_SEGMENT_LAMP_PROPERTIES = DIAL_LAMP_PROPERTIES
+            .lightLevel(
+                    (blockstate) -> 10
+            );
+
     public static final BlockBehaviour.Properties REDSTONE_COMPONENT_PROPERTIES = BlockBehaviour.Properties.of()
             .mapColor(MapColor.COLOR_LIGHT_GRAY)
             .strength(0.3f)

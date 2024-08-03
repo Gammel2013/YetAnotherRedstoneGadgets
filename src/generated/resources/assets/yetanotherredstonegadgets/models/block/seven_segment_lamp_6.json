@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "yetanotherredstonegadgets:block/seven_segment_lamp_6"
+  }
+}

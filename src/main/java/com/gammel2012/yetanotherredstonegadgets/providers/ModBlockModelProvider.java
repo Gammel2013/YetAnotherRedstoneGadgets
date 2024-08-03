@@ -6,8 +6,10 @@ import com.gammel2012.utils.providers.BaseBlockModelProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModBlockModelProvider extends BaseBlockModelProvider {
     public ModBlockModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -45,7 +47,8 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
 
         registerRedstoneDividerModels();
         registerRedstoneDialModels();
-        registerDialLampModels();
+        registerDialLampModels(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK);
+        registerDialLampModels(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK);
     }
 
     private void registerRedstoneDividerModels() {
@@ -171,10 +174,10 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         redstone_torch_on(block_name, "torch_on", 7, 0, 7);
     }
 
-    private void registerDialLampModels() {
+    private void registerDialLampModels(DeferredBlock<Block> dBlock) {
 
-        String name = getBlockName(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK.get());
-        ResourceLocation base_texture_path = blockLoc(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK.get());
+        String name = getBlockName(dBlock.get());
+        ResourceLocation base_texture_path = blockLoc(dBlock.get());
 
         for (int power = 0; power < 16; power++) {
             cubeAll(

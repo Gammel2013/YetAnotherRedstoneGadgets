@@ -49,6 +49,7 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add(ModBlocks.REDSTONE_DIVIDER_BLOCK, "Redstone Divider");
         add(ModBlocks.REDSTONE_DIAL_BLOCK, "Redstone Dial");
         add(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK, "Redstone Dial Lamp");
+        add(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK, "Seven Segment Lamp");
 
         checkMissingTranslations();
     }

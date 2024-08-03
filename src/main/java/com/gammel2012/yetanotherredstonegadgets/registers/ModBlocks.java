@@ -50,6 +50,12 @@ public class ModBlocks {
             ModBlockBehaviourProperties.DIAL_LAMP_PROPERTIES
     );
 
+    public static final DeferredBlock<Block> SEVEN_SEGMENT_LAMP_BLOCK = registerBlock(
+            "seven_segment_lamp",
+            RedstoneDialLampBlock::new,
+            ModBlockBehaviourProperties.DIAL_LAMP_PROPERTIES
+    );
+
     public static void register(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
     }
