@@ -39,6 +39,8 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
 
         redstoneDivider(ModBlocks.REDSTONE_DIVIDER_BLOCK);
         redstoneDial(ModBlocks.REDSTONE_DIAL_BLOCK);
+
+        longRangeObserver(ModBlocks.LONG_RANGE_OBSERVER_BLOCK);
     }
 
     public void propagatingRedstoneLamp(DeferredBlock<Block> dBlock) {
@@ -289,5 +291,37 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                             .build();
                 }
         );
+    }
+
+    private void longRangeObserver(DeferredBlock<Block> dBlock) {
+        Block block = dBlock.get();
+        String name = getBlockName(block);
+
+        MultiPartBlockStateBuilder bld = getMultipartBuilder(block);
+
+        ModelFile model_on = models().getExistingFile(modLoc("block/" + name + "_on"));
+        ModelFile model_off = models().getExistingFile(modLoc("block/" + name + "_off"));
+
+        for (Direction dir : ModBlockProperties.ALL_FACING.getPossibleValues()) {
+
+            int rotation_y = ((int) dir.toYRot() + 180) % 360;
+
+            int rotation_x = 0;
+            if (dir == Direction.DOWN) {
+                rotation_x = 90;
+            } else if (dir == Direction.UP) {
+                rotation_x = 270;
+            }
+
+
+
+            bld.part().modelFile(model_on).rotationY(rotation_y).rotationX(rotation_x).addModel()
+                    .condition(ModBlockProperties.ALL_FACING, dir)
+                    .condition(ModBlockProperties.POWERED, true);
+
+            bld.part().modelFile(model_off).rotationY(rotation_y).rotationX(rotation_x).addModel()
+                    .condition(ModBlockProperties.ALL_FACING, dir)
+                    .condition(ModBlockProperties.POWERED, false);
+        }
     }
 }

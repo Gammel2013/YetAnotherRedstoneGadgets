@@ -98,5 +98,17 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
                 new ShapedRecipeIngredient('g', Items.GLOWSTONE)
         );
+
+        shaped(
+                toResourceLocation("long_range_observer"),
+                pRecipeOutput,
+                ModItems.LONG_RANGE_OBSERVER_ITEM.get(),
+                1,
+                " e ",
+                "eoe",
+                " e ",
+                new ShapedRecipeIngredient('e', Items.ECHO_SHARD),
+                new ShapedRecipeIngredient('o', Items.OBSERVER)
+        );
     }
 }

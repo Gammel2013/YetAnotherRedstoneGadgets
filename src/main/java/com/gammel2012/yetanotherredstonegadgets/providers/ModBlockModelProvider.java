@@ -49,6 +49,7 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         registerRedstoneDialModels();
         registerDialLampModels(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK);
         registerDialLampModels(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK);
+        registerLongRangeObserver();
     }
 
     private void registerRedstoneDividerModels() {
@@ -185,5 +186,36 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
                     base_texture_path.withSuffix("_" + power)
             );
         }
+    }
+
+    private void registerLongRangeObserver() {
+
+        Block long_observer = ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get();
+
+        String name = getBlockName(long_observer);
+
+        ResourceLocation front_texture = blockLoc(long_observer).withSuffix("_front");
+        ResourceLocation top_texture = mcLoc("block/observer_top");
+        ResourceLocation side_texture = mcLoc("block/observer_side");
+        ResourceLocation back_off_texture = mcLoc("block/observer_back");
+        ResourceLocation back_on_texture = mcLoc("block/observer_back_on");
+
+        cube(name + "_off",
+                top_texture,
+                top_texture,
+                front_texture,
+                back_off_texture,
+                side_texture,
+                side_texture
+        ).texture("particle", front_texture);
+
+        cube(name + "_on",
+                top_texture,
+                top_texture,
+                front_texture,
+                back_on_texture,
+                side_texture,
+                side_texture
+        ).texture("particle", front_texture);
     }
 }

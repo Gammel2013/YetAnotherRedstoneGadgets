@@ -24,6 +24,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.REDSTONE_DIVIDER_ITEM.get());
                 output.accept(ModItems.REDSTONE_DIAL_ITEM.get());
                 output.accept(ModItems.SEVEN_SEGMENT_LAMP_ITEM.get());
+                output.accept(ModItems.LONG_RANGE_OBSERVER_ITEM);
             }).build());
 
     public static void register(IEventBus modEventBus) {

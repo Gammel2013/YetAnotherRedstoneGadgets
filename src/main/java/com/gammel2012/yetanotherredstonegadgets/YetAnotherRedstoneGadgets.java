@@ -1,6 +1,7 @@
 package com.gammel2012.yetanotherredstonegadgets;
 
 import com.gammel2012.yetanotherredstonegadgets.providers.*;
+import com.gammel2012.yetanotherredstonegadgets.registers.ModBlockEntityTypes;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModCreativeTabs;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModItems;
@@ -15,6 +16,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -54,6 +56,7 @@ public class YetAnotherRedstoneGadgets
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        ModBlockEntityTypes.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -84,13 +87,13 @@ public class YetAnotherRedstoneGadgets
             CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
 
-            // BlockTagsProvider blockTags = new CTBlockTagsProvider(output, lookupProvider, existingFileHelper);
+            BlockTagsProvider blockTags = new ModBlockTagsProvider(output, lookupProvider, existingFileHelper);
 
             generator.addProvider(true, new ModBlockModelProvider(output, existingFileHelper));
             generator.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
             generator.addProvider(true, new ModItemModelProvider(output, existingFileHelper));
-            // generator.addProvider(true, blockTags);
-            // generator.addProvider(true, new CTItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
+            generator.addProvider(true, blockTags);
+            generator.addProvider(true, new ModItemTagsProvider(output, lookupProvider, blockTags.contentsGetter()));
             generator.addProvider(true, new ModRecipeProvider(output));
             generator.addProvider(true, new ModEnglishUSLanguageProvider(output));
             generator.addProvider(true, new ModLootTableProvider(output));

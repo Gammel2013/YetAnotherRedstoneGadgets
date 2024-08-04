@@ -1,9 +1,12 @@
 package com.gammel2012.yetanotherredstonegadgets.providers;
 
 import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
+import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModItems;
 import com.gammel2012.utils.providers.BaseItemModelProvider;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 public class ModItemModelProvider extends BaseItemModelProvider {
@@ -40,5 +43,10 @@ public class ModItemModelProvider extends BaseItemModelProvider {
 
         buildBasicItem(ModItems.REDSTONE_DIVIDER_ITEM);
         buildBasicItem(ModItems.REDSTONE_DIAL_ITEM);
+
+        withExistingParent(
+                getItemName(ModItems.LONG_RANGE_OBSERVER_ITEM.get()),
+                blockLoc(ModItems.LONG_RANGE_OBSERVER_ITEM.get()).withSuffix("_off")
+        );
     }
 }

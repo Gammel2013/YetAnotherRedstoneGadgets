@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/observer_top",
+    "east": "minecraft:block/observer_side",
+    "north": "yetanotherredstonegadgets:block/long_range_observer_front",
+    "particle": "yetanotherredstonegadgets:block/long_range_observer_front",
+    "south": "minecraft:block/observer_back_on",
+    "up": "minecraft:block/observer_top",
+    "west": "minecraft:block/observer_side"
+  }
+}
