@@ -1,7 +1,7 @@
 package com.gammel2012.yetanotherredstonegadgets.blocks;
 
 import com.gammel2012.utils.TickingEntityBlock;
-import com.gammel2012.yetanotherredstonegadgets.blockentities.LongRangeObserverBlockEntity;
+import com.gammel2012.yetanotherredstonegadgets.blockentities.CalibratedObserverBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -14,40 +14,44 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityTicker;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.Nullable;
 
-public class LongRangeObserverBlock extends TickingEntityBlock {
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+
+public class CalibratedObserverBlock extends TickingEntityBlock {
 
     public static final DirectionProperty FACING = ModBlockProperties.ALL_FACING;
     public static final BooleanProperty POWERED = ModBlockProperties.POWERED;
-    public static final IntegerProperty RANGE = ModBlockProperties.LONG_OBSERVER_RANGE;
 
-    public LongRangeObserverBlock(Properties properties) {
+    public CalibratedObserverBlock(Properties properties) {
         super(properties);
 
         this.registerDefaultState(
                 this.getStateDefinition().any()
                         .setValue(FACING, Direction.NORTH)
                         .setValue(POWERED, false)
-                        .setValue(RANGE, 2)
         );
+    }
+
+    @Nullable
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return new CalibratedObserverBlockEntity(pPos, pState);
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(FACING);
         pBuilder.add(POWERED);
-        pBuilder.add(RANGE);
     }
 
     @Override
@@ -66,42 +70,57 @@ public class LongRangeObserverBlock extends TickingEntityBlock {
         return (pBlockState.getValue(FACING) == pSide && pBlockState.getValue(POWERED)) ? 15 : 0;
     }
 
-    @Nullable
-    @Override
-    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new LongRangeObserverBlockEntity(pPos, pState);
-    }
-
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pPlayer.getAbilities().mayBuild) {
             return InteractionResult.PASS;
-        } else {
+        }
 
-            int val = 0;
-            if (!pPlayer.isShiftKeyDown()) {
-                // Regular rightclick: Cycle forwards
-                val = pState.getValue(RANGE) == 8 ? 1 : pState.getValue(RANGE) + 1;
-            } else {
-                // Shift rightclick: Cycle backwards
-                val = pState.getValue(RANGE) == 1 ? 8 : pState.getValue(RANGE) - 1;
+        // Cycle through possible blockstate values to observe
+        BlockEntity be = pLevel.getBlockEntity(pPos);
+        if (be instanceof CalibratedObserverBlockEntity calibrated_observer) {
+
+            Collection<Property<?>> possible_properties = calibrated_observer.getPossibleProperties(pLevel, pPos, pState);
+            Property<?> current_property = calibrated_observer.getMatchingPropertyInFront(pLevel, pPos, pState);
+
+            Property<?>[] props = possible_properties.toArray(new Property<?>[0]);
+
+            if (props.length == 0) {
+                // Display status message
+                if (pLevel.isClientSide) {
+                    String message = "block.yargmod.calibratedobserver.nothingtosee";
+                    pPlayer.displayClientMessage(Component.translatable(message), true);
+                }
+
+                return InteractionResult.PASS;
             }
 
-            pState = pState.setValue(RANGE, val);
+            Property<?> new_prop;
+
+            if (Arrays.stream(props).noneMatch(current_property::equals)) {
+                new_prop = props[0];
+            } else {
+                int index = Arrays.asList(props).indexOf(current_property);
+                index = (index + 1) % props.length;
+                new_prop = props[index];
+            }
 
             // Play sound effect
-            float pitch = 0.45f + 0.02f * val;
+            float pitch = 0.5f;
             pLevel.playSound(pPlayer, pPos, SoundEvents.COMPARATOR_CLICK, SoundSource.BLOCKS, 0.3F, pitch);
 
             // Display status message
             if (pLevel.isClientSide) {
-                String message = "block.yargmod.longobserver.range";
-                pPlayer.displayClientMessage(Component.translatable(message, val), true);
+                String message = "block.yargmod.calibratedobserver.filter";
+                pPlayer.displayClientMessage(Component.translatable(message, new_prop.getName()), true);
             }
+
+            calibrated_observer.setObservedProperty(new_prop);
 
             // Update block
             pLevel.setBlock(pPos, pState, 3);
             return InteractionResult.sidedSuccess(pLevel.isClientSide);
         }
+        return InteractionResult.PASS;
     }
 }

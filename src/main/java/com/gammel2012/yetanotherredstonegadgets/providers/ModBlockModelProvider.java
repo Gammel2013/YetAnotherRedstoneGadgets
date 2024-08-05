@@ -49,7 +49,8 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         registerRedstoneDialModels();
         registerDialLampModels(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK);
         registerDialLampModels(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK);
-        registerLongRangeObserver();
+        registerObserver(ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get());
+        registerObserver(ModBlocks.CALIBRATED_OBSERVER_BLOCK.get());
     }
 
     private void registerRedstoneDividerModels() {
@@ -188,13 +189,11 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         }
     }
 
-    private void registerLongRangeObserver() {
+    private void registerObserver(Block observer_block) {
 
-        Block long_observer = ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get();
+        String name = getBlockName(observer_block);
 
-        String name = getBlockName(long_observer);
-
-        ResourceLocation front_texture = blockLoc(long_observer).withSuffix("_front");
+        ResourceLocation front_texture = blockLoc(observer_block).withSuffix("_front");
         ResourceLocation top_texture = mcLoc("block/observer_top");
         ResourceLocation side_texture = mcLoc("block/observer_side");
         ResourceLocation back_off_texture = mcLoc("block/observer_back");

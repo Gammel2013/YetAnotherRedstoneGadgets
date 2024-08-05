@@ -62,6 +62,12 @@ public class ModBlocks {
             ModBlockBehaviourProperties.LONG_RANGE_OBSERVER_PROPERTIES.toProperties()
     );
 
+    public static final DeferredBlock<Block> CALIBRATED_OBSERVER_BLOCK = registerBlock(
+            "calibrated_observer",
+            CalibratedObserverBlock::new,
+            ModBlockBehaviourProperties.LONG_RANGE_OBSERVER_PROPERTIES.toProperties()
+    );
+
     public static void register(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
     }

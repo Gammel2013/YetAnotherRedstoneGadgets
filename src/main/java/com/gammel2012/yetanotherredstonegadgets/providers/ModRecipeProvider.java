@@ -110,5 +110,17 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 new ShapedRecipeIngredient('e', Items.ECHO_SHARD),
                 new ShapedRecipeIngredient('o', Items.OBSERVER)
         );
+
+        shaped(
+                toResourceLocation("calibrated_observer"),
+                pRecipeOutput,
+                ModItems.CALIBRATED_OBSERVER_ITEM.get(),
+                1,
+                " a ",
+                "aoa",
+                " a ",
+                new ShapedRecipeIngredient('a', Tags.Items.GEMS_AMETHYST),
+                new ShapedRecipeIngredient('o', Items.OBSERVER)
+        );
     }
 }

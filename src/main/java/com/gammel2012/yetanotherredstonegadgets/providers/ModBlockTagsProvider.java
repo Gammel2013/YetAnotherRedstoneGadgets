@@ -23,7 +23,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        addBlocksToTag(BlockTags.MINEABLE_WITH_PICKAXE, ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get());
+        addBlocksToTag(
+                BlockTags.MINEABLE_WITH_PICKAXE,
+                ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get(),
+                ModBlocks.CALIBRATED_OBSERVER_BLOCK.get()
+        );
     }
 
     protected void addBlocksToTag(TagKey<Block> blocktag, Block... blocks) {

@@ -18,6 +18,7 @@ public class ModBlockProperties {
     );
 
     public static final IntegerProperty LONG_OBSERVER_RANGE = IntegerProperty.create("observer_range", 1, 8);
+    public static final BooleanProperty CALIBRATED_OBSERVER_DUMMY = BooleanProperty.create("calibrated_observer_dummy");
 
     public static final BooleanProperty ROUND_UP = BooleanProperty.create("round_up");
 

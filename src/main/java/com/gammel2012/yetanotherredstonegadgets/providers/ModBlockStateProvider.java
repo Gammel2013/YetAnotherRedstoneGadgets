@@ -40,7 +40,8 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
         redstoneDivider(ModBlocks.REDSTONE_DIVIDER_BLOCK);
         redstoneDial(ModBlocks.REDSTONE_DIAL_BLOCK);
 
-        longRangeObserver(ModBlocks.LONG_RANGE_OBSERVER_BLOCK);
+        observer(ModBlocks.LONG_RANGE_OBSERVER_BLOCK);
+        observer(ModBlocks.CALIBRATED_OBSERVER_BLOCK);
     }
 
     public void propagatingRedstoneLamp(DeferredBlock<Block> dBlock) {
@@ -293,7 +294,7 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
         );
     }
 
-    private void longRangeObserver(DeferredBlock<Block> dBlock) {
+    private void observer(DeferredBlock<Block> dBlock) {
         Block block = dBlock.get();
         String name = getBlockName(block);
 

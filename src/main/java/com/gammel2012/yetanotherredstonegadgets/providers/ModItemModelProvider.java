@@ -48,5 +48,10 @@ public class ModItemModelProvider extends BaseItemModelProvider {
                 getItemName(ModItems.LONG_RANGE_OBSERVER_ITEM.get()),
                 blockLoc(ModItems.LONG_RANGE_OBSERVER_ITEM.get()).withSuffix("_off")
         );
+
+        withExistingParent(
+                getItemName(ModItems.CALIBRATED_OBSERVER_ITEM.get()),
+                blockLoc(ModItems.CALIBRATED_OBSERVER_ITEM.get()).withSuffix("_off")
+        );
     }
 }

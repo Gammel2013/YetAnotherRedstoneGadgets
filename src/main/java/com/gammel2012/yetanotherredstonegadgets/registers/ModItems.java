@@ -23,6 +23,7 @@ public class ModItems {
     public static final DeferredItem<BlockItem> REDSTONE_DIAL_ITEM = registerSimpleBlockItem(ModBlocks.REDSTONE_DIAL_BLOCK);
 
     public static final DeferredItem<BlockItem> LONG_RANGE_OBSERVER_ITEM = registerSimpleBlockItem(ModBlocks.LONG_RANGE_OBSERVER_BLOCK);
+    public static final DeferredItem<BlockItem> CALIBRATED_OBSERVER_ITEM = registerSimpleBlockItem(ModBlocks.CALIBRATED_OBSERVER_BLOCK);
 
     public static void register(IEventBus modEventBus) {
         ITEMS.register(modEventBus);

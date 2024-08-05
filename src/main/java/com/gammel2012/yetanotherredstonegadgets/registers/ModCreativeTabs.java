@@ -16,16 +16,20 @@ public class ModCreativeTabs {
             .title(Component.translatable("itemGroup.YetAnotherRedstoneGadgets.tab")) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ModItems.PURPLE_PROPAGATING_REDSTONE_LAMP_ITEM.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                output.accept(ModItems.RED_PROPAGATING_REDSTONE_LAMP_ITEM.get());
-                output.accept(ModItems.BLUE_PROPAGATING_REDSTONE_LAMP_ITEM.get());
-                output.accept(ModItems.PURPLE_PROPAGATING_REDSTONE_LAMP_ITEM.get());
-                output.accept(ModItems.REDSTONE_DIAL_LAMP_ITEM.get());
-                output.accept(ModItems.REDSTONE_DIVIDER_ITEM.get());
-                output.accept(ModItems.REDSTONE_DIAL_ITEM.get());
-                output.accept(ModItems.SEVEN_SEGMENT_LAMP_ITEM.get());
-                output.accept(ModItems.LONG_RANGE_OBSERVER_ITEM);
-            }).build());
+            .displayItems(ModCreativeTabs::addRedstoneTabItems)
+            .build());
+
+    private static void addRedstoneTabItems(CreativeModeTab.ItemDisplayParameters pParameters, CreativeModeTab.Output pOutput) {
+        pOutput.accept(ModItems.RED_PROPAGATING_REDSTONE_LAMP_ITEM);
+        pOutput.accept(ModItems.BLUE_PROPAGATING_REDSTONE_LAMP_ITEM);
+        pOutput.accept(ModItems.PURPLE_PROPAGATING_REDSTONE_LAMP_ITEM);
+        pOutput.accept(ModItems.REDSTONE_DIAL_LAMP_ITEM);
+        pOutput.accept(ModItems.REDSTONE_DIVIDER_ITEM);
+        pOutput.accept(ModItems.REDSTONE_DIAL_ITEM);
+        pOutput.accept(ModItems.SEVEN_SEGMENT_LAMP_ITEM);
+        pOutput.accept(ModItems.LONG_RANGE_OBSERVER_ITEM);
+        pOutput.accept(ModItems.CALIBRATED_OBSERVER_ITEM);
+    }
 
     public static void register(IEventBus modEventBus) {
         CREATIVE_MODE_TABS.register(modEventBus);

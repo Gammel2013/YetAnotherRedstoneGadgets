@@ -43,6 +43,8 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add("block.yargmod.dial.power", "Output strength: %1$s");
 
         add("block.yargmod.longobserver.range", "Observing block %1$sm in front");
+        add("block.yargmod.calibratedobserver.filter", "Observing property '%1$s'");
+        add("block.yargmod.calibratedobserver.nothingtosee", "The block in front has no observable properties");
 
         // Normal blocks
         add(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Purple Propagating Redstone Lamp");
@@ -53,6 +55,7 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add(ModBlocks.REDSTONE_DIAL_LAMP_BLOCK, "Redstone Dial Lamp");
         add(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK, "Seven Segment Lamp");
         add(ModBlocks.LONG_RANGE_OBSERVER_BLOCK, "Long Range Observer");
+        add(ModBlocks.CALIBRATED_OBSERVER_BLOCK, "Calibrated Observer");
 
         checkMissingTranslations();
     }

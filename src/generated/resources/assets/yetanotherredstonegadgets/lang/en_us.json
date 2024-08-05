@@ -1,10 +1,13 @@
 {
+  "block.yargmod.calibratedobserver.filter": "Observing property '%1$s'",
+  "block.yargmod.calibratedobserver.nothingtosee": "The block in front has no observable properties",
   "block.yargmod.dial.power": "Output strength: %1$s",
   "block.yargmod.divider.divider": "Dividing by %1$s",
   "block.yargmod.divider.round_down": "Rounding down",
   "block.yargmod.divider.round_up": "Rounding up",
   "block.yargmod.longobserver.range": "Observing block %1$sm in front",
   "block.yetanotherredstonegadgets.blue_propagating_redstone_lamp": "Blue Propagating Redstone Lamp",
+  "block.yetanotherredstonegadgets.calibrated_observer": "Calibrated Observer",
   "block.yetanotherredstonegadgets.long_range_observer": "Long Range Observer",
   "block.yetanotherredstonegadgets.purple_propagating_redstone_lamp": "Purple Propagating Redstone Lamp",
   "block.yetanotherredstonegadgets.red_propagating_redstone_lamp": "Red Propagating Redstone Lamp",

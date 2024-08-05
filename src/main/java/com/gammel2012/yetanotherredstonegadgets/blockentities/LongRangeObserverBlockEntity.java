@@ -18,40 +18,58 @@ public class LongRangeObserverBlockEntity extends BlockEntity implements Ticking
 
     public LongRangeObserverBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntityTypes.LONG_RANGE_OBSERVER.get(), pPos, pBlockState);
-        this.old_state = pBlockState;
     }
 
     @Override
     public void tickServer(Level lvl, BlockPos pos, BlockState st, BlockEntity blockEntity) {
+
         boolean powered = st.getValue(LongRangeObserverBlock.POWERED);
+
+        boolean early_return = false;
 
         if (powered_timer > 0) {
             powered_timer -= 1;
+            early_return = true;
         }
 
         if (powered && powered_timer == 0) {
             st = st.setValue(LongRangeObserverBlock.POWERED, false);
             lvl.setBlock(pos, st, 3);
+            early_return = true;
+        }
 
-        } else {
+        if (old_state == null) {
             Direction facing = st.getValue(LongRangeObserverBlock.FACING);
-
             int range = st.getValue(LongRangeObserverBlock.RANGE);
 
             BlockPos observed_pos = pos.relative(facing, range);
-
             BlockState new_state = lvl.getBlockState(observed_pos);
-            Block new_block = new_state.getBlock();
-
-            if (!old_state.is(new_block) || !old_state.equals(new_state)) {
-                st = st.setValue(LongRangeObserverBlock.POWERED, true);
-                lvl.setBlock(pos, st, 3);
-
-                powered_timer = 2;
-            }
 
             old_state = new_state;
+            early_return = true;
         }
+
+        if (early_return) return;
+
+
+        Direction facing = st.getValue(LongRangeObserverBlock.FACING);
+
+        int range = st.getValue(LongRangeObserverBlock.RANGE);
+
+        BlockPos observed_pos = pos.relative(facing, range);
+
+        BlockState new_state = lvl.getBlockState(observed_pos);
+        Block new_block = new_state.getBlock();
+
+        if (!old_state.is(new_block) || !old_state.equals(new_state)) {
+            st = st.setValue(LongRangeObserverBlock.POWERED, true);
+            lvl.setBlock(pos, st, 3);
+
+            powered_timer = 2;
+        }
+
+        old_state = new_state;
+
     }
 
     @Override
