@@ -289,7 +289,7 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                     int angle_y = (int) state.getValue(facing).toYRot();
 
                     return ConfiguredModel.builder()
-                            .modelFile(models().getExistingFile(modLoc("block/" + name + "_" + power)))
+                            .modelFile(models().getExistingFile(modLoc("block/" + name + "/" + power)))
                             .rotationY(angle_y)
                             .build();
                 }

@@ -188,7 +188,7 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
 
         for (int power = 0; power < 16; power++) {
             cubeAll(
-                    name + "_" + power,
+                    "block/" + name + "/" + power,
                     base_texture_path.withSuffix("_" + power)
             );
         }

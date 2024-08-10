@@ -1,243 +1,243 @@
 {
   "variants": {
     "facing=east,power=0": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_0",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/0",
       "y": 270
     },
     "facing=east,power=1": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_1",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/1",
       "y": 270
     },
     "facing=east,power=10": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_10",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/10",
       "y": 270
     },
     "facing=east,power=11": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_11",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/11",
       "y": 270
     },
     "facing=east,power=12": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_12",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/12",
       "y": 270
     },
     "facing=east,power=13": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_13",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/13",
       "y": 270
     },
     "facing=east,power=14": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_14",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/14",
       "y": 270
     },
     "facing=east,power=15": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_15",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/15",
       "y": 270
     },
     "facing=east,power=2": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_2",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/2",
       "y": 270
     },
     "facing=east,power=3": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_3",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/3",
       "y": 270
     },
     "facing=east,power=4": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_4",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/4",
       "y": 270
     },
     "facing=east,power=5": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_5",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/5",
       "y": 270
     },
     "facing=east,power=6": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_6",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/6",
       "y": 270
     },
     "facing=east,power=7": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_7",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/7",
       "y": 270
     },
     "facing=east,power=8": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_8",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/8",
       "y": 270
     },
     "facing=east,power=9": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_9",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/9",
       "y": 270
     },
     "facing=north,power=0": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_0",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/0",
       "y": 180
     },
     "facing=north,power=1": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_1",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/1",
       "y": 180
     },
     "facing=north,power=10": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_10",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/10",
       "y": 180
     },
     "facing=north,power=11": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_11",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/11",
       "y": 180
     },
     "facing=north,power=12": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_12",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/12",
       "y": 180
     },
     "facing=north,power=13": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_13",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/13",
       "y": 180
     },
     "facing=north,power=14": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_14",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/14",
       "y": 180
     },
     "facing=north,power=15": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_15",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/15",
       "y": 180
     },
     "facing=north,power=2": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_2",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/2",
       "y": 180
     },
     "facing=north,power=3": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_3",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/3",
       "y": 180
     },
     "facing=north,power=4": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_4",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/4",
       "y": 180
     },
     "facing=north,power=5": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_5",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/5",
       "y": 180
     },
     "facing=north,power=6": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_6",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/6",
       "y": 180
     },
     "facing=north,power=7": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_7",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/7",
       "y": 180
     },
     "facing=north,power=8": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_8",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/8",
       "y": 180
     },
     "facing=north,power=9": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_9",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/9",
       "y": 180
     },
     "facing=south,power=0": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_0"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/0"
     },
     "facing=south,power=1": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_1"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/1"
     },
     "facing=south,power=10": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_10"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/10"
     },
     "facing=south,power=11": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_11"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/11"
     },
     "facing=south,power=12": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_12"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/12"
     },
     "facing=south,power=13": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_13"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/13"
     },
     "facing=south,power=14": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_14"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/14"
     },
     "facing=south,power=15": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_15"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/15"
     },
     "facing=south,power=2": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_2"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/2"
     },
     "facing=south,power=3": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_3"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/3"
     },
     "facing=south,power=4": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_4"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/4"
     },
     "facing=south,power=5": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_5"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/5"
     },
     "facing=south,power=6": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_6"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/6"
     },
     "facing=south,power=7": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_7"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/7"
     },
     "facing=south,power=8": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_8"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/8"
     },
     "facing=south,power=9": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_9"
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/9"
     },
     "facing=west,power=0": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_0",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/0",
       "y": 90
     },
     "facing=west,power=1": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_1",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/1",
       "y": 90
     },
     "facing=west,power=10": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_10",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/10",
       "y": 90
     },
     "facing=west,power=11": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_11",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/11",
       "y": 90
     },
     "facing=west,power=12": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_12",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/12",
       "y": 90
     },
     "facing=west,power=13": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_13",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/13",
       "y": 90
     },
     "facing=west,power=14": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_14",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/14",
       "y": 90
     },
     "facing=west,power=15": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_15",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/15",
       "y": 90
     },
     "facing=west,power=2": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_2",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/2",
       "y": 90
     },
     "facing=west,power=3": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_3",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/3",
       "y": 90
     },
     "facing=west,power=4": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_4",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/4",
       "y": 90
     },
     "facing=west,power=5": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_5",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/5",
       "y": 90
     },
     "facing=west,power=6": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_6",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/6",
       "y": 90
     },
     "facing=west,power=7": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_7",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/7",
       "y": 90
     },
     "facing=west,power=8": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_8",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/8",
       "y": 90
     },
     "facing=west,power=9": {
-      "model": "yetanotherredstonegadgets:block/seven_segment_lamp_9",
+      "model": "yetanotherredstonegadgets:block/seven_segment_lamp/9",
       "y": 90
     }
   }
