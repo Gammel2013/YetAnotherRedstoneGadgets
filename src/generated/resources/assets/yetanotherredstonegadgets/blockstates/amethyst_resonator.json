@@ -1,0 +1,132 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator",
+        "x": 90,
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "lit": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator_on",
+        "x": 90,
+        "y": 180
+      },
+      "when": {
+        "facing": "north",
+        "lit": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator",
+        "x": 90,
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "lit": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator_on",
+        "x": 90,
+        "y": 270
+      },
+      "when": {
+        "facing": "east",
+        "lit": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator",
+        "x": 90
+      },
+      "when": {
+        "facing": "south",
+        "lit": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator_on",
+        "x": 90
+      },
+      "when": {
+        "facing": "south",
+        "lit": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "lit": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator_on",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "facing": "west",
+        "lit": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator",
+        "x": 180,
+        "y": 270
+      },
+      "when": {
+        "facing": "up",
+        "lit": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator_on",
+        "x": 180,
+        "y": 270
+      },
+      "when": {
+        "facing": "up",
+        "lit": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator",
+        "y": 270
+      },
+      "when": {
+        "facing": "down",
+        "lit": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/amethyst_resonator_on",
+        "y": 270
+      },
+      "when": {
+        "facing": "down",
+        "lit": "true"
+      }
+    }
+  ]
+}

@@ -56,6 +56,7 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK, "Seven Segment Lamp");
         add(ModBlocks.LONG_RANGE_OBSERVER_BLOCK, "Long Range Observer");
         add(ModBlocks.CALIBRATED_OBSERVER_BLOCK, "Calibrated Observer");
+        add(ModBlocks.AMETHYST_RESONATOR_BLOCK, "Amethyst Resonator");
 
         checkMissingTranslations();
     }

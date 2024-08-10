@@ -68,6 +68,12 @@ public class ModBlocks {
             ModBlockBehaviourProperties.LONG_RANGE_OBSERVER_PROPERTIES.toProperties()
     );
 
+    public static final DeferredBlock<Block> AMETHYST_RESONATOR_BLOCK = registerBlock(
+            "amethyst_resonator",
+            (properties) -> new AmethystResonatorBlock(properties, 1),
+            ModBlockBehaviourProperties.AMETHYST_RESONATOR_PROPERTIES.toProperties()
+    );
+
     public static void register(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
     }

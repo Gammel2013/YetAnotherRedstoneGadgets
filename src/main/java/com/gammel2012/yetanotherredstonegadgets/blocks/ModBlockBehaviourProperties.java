@@ -45,4 +45,12 @@ public class ModBlockBehaviourProperties {
             .strength(3.0F)
             .requiresCorrectToolForDrops()
             .isRedstoneConductor((state, getter, blockpos) -> false);
+
+    public static final PropertiesWrapper AMETHYST_RESONATOR_PROPERTIES = PropertiesWrapper.of()
+            .mapColor(MapColor.STONE)
+            .strength(2.0F)
+            .requiresCorrectToolForDrops()
+            .isRedstoneConductor((state, getter, blockpos) -> false)
+            .noOcclusion()
+            .sound(SoundType.AMETHYST);
 }

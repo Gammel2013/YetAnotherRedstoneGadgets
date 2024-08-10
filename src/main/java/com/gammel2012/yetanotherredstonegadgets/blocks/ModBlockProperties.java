@@ -26,4 +26,5 @@ public class ModBlockProperties {
     public static final DirectionProperty HORIZONTAL_FACING_DIRECTION = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final DirectionProperty ALL_FACING = BlockStateProperties.FACING;
+    public static final BooleanProperty LIT = BlockStateProperties.LIT;
 }

@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:gems/amethyst"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:storage_blocks/redstone"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:stone"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "forge:gems/amethyst"
+    },
+    "r": {
+      "tag": "forge:storage_blocks/redstone"
+    },
+    "s": {
+      "tag": "forge:stone"
+    }
+  },
+  "pattern": [
+    " a ",
+    "rrr",
+    "sss"
+  ],
+  "result": {
+    "item": "yetanotherredstonegadgets:amethyst_resonator"
+  }
+}

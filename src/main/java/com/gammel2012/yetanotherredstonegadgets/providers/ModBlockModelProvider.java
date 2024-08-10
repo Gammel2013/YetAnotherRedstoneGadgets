@@ -3,11 +3,14 @@ package com.gammel2012.yetanotherredstonegadgets.providers;
 import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
 import com.gammel2012.utils.providers.BaseBlockModelProvider;
+import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
@@ -51,6 +54,8 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         registerDialLampModels(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK);
         registerObserver(ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get());
         registerObserver(ModBlocks.CALIBRATED_OBSERVER_BLOCK.get());
+
+        registerAmethystResonator(ModBlocks.AMETHYST_RESONATOR_BLOCK.get());
     }
 
     private void registerRedstoneDividerModels() {
@@ -216,5 +221,77 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
                 side_texture,
                 side_texture
         ).texture("particle", front_texture);
+    }
+
+    private void registerAmethystResonator(Block resonator_block) {
+
+        String name = getBlockName(resonator_block);
+
+        ResourceLocation top_texture = blockLoc(resonator_block).withSuffix("_top");
+        ResourceLocation side_texture = blockLoc(resonator_block).withSuffix("_side");
+        ResourceLocation bottom_off_texture = blockLoc(resonator_block).withSuffix("_bottom");
+        ResourceLocation bottom_on_texture = blockLoc(resonator_block).withSuffix("_bottom_on");
+
+        ResourceLocation amethyst_texture = mcLoc("block/calibrated_sculk_sensor_amethyst");
+
+        BlockModelBuilder builder_off = getBuilder(name);
+        builder_off.parent(getExistingFile(mcLoc("block/block")));
+        builder_off.guiLight(BlockModel.GuiLight.FRONT);
+        builder_off.element()
+                .from(0, 0, 0)
+                .to(16, 6, 16)
+                .face(Direction.UP).texture("#top").end()
+                .face(Direction.DOWN).texture("#bottom").end()
+                .face(Direction.NORTH).texture("#side").end()
+                .face(Direction.EAST).texture("#side").end()
+                .face(Direction.SOUTH).texture("#side").end()
+                .face(Direction.WEST).texture("#side").end();
+        builder_off.texture("particle", top_texture);
+        builder_off.texture("top", top_texture);
+        builder_off.texture("side", side_texture);
+        builder_off.texture("bottom", bottom_off_texture);
+        builder_off.element()
+                .from(4, 6, 8)
+                .to(11, 16, 8)
+                .face(Direction.NORTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .face(Direction.SOUTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .rotation().origin(8, 6, 8).axis(Direction.Axis.Y).angle(45);
+        builder_off.element()
+                .from(4, 6, 8)
+                .to(11, 16, 8)
+                .face(Direction.NORTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .face(Direction.SOUTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .rotation().origin(8, 6, 8).axis(Direction.Axis.Y).angle(-45);
+        builder_off.texture("crystal", amethyst_texture);
+        builder_off.renderType("cutout");
+
+        BlockModelBuilder builder_on = getBuilder(name + "_on");
+        builder_on.element()
+                .from(0, 0, 0)
+                .to(16, 6, 16)
+                .face(Direction.UP).texture("#top").end()
+                .face(Direction.DOWN).texture("#bottom").end()
+                .face(Direction.NORTH).texture("#side").end()
+                .face(Direction.EAST).texture("#side").end()
+                .face(Direction.SOUTH).texture("#side").end()
+                .face(Direction.WEST).texture("#side").end();
+        builder_on.texture("particle", top_texture);
+        builder_on.texture("top", top_texture);
+        builder_on.texture("side", side_texture);
+        builder_on.texture("bottom", bottom_on_texture);
+        builder_on.element()
+                .from(4, 6, 8)
+                .to(11, 16, 8)
+                .face(Direction.NORTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .face(Direction.SOUTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .rotation().origin(8, 6, 8).axis(Direction.Axis.Y).angle(45);
+        builder_on.element()
+                .from(4, 6, 8)
+                .to(11, 16, 8)
+                .face(Direction.NORTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .face(Direction.SOUTH).texture("#crystal").uvs(4, 4, 11, 14).end()
+                .rotation().origin(8, 6, 8).axis(Direction.Axis.Y).angle(-45);
+        builder_on.texture("crystal", amethyst_texture);
+        builder_on.renderType("cutout");
     }
 }

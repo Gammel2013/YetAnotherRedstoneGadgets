@@ -122,5 +122,18 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 new ShapedRecipeIngredient('a', Tags.Items.GEMS_AMETHYST),
                 new ShapedRecipeIngredient('o', Items.OBSERVER)
         );
+
+        shaped(
+                toResourceLocation("amethyst_resonator"),
+                pRecipeOutput,
+                ModItems.AMETHYST_RESONATOR_ITEM.get(),
+                1,
+                " a ",
+                "rrr",
+                "sss",
+                new ShapedRecipeIngredient('a', Tags.Items.GEMS_AMETHYST),
+                new ShapedRecipeIngredient('r', Tags.Items.STORAGE_BLOCKS_REDSTONE),
+                new ShapedRecipeIngredient('s', Tags.Items.STONE)
+        );
     }
 }

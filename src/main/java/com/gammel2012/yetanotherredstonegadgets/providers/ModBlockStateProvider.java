@@ -42,6 +42,8 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
 
         observer(ModBlocks.LONG_RANGE_OBSERVER_BLOCK);
         observer(ModBlocks.CALIBRATED_OBSERVER_BLOCK);
+
+        amethyst_resonator(ModBlocks.AMETHYST_RESONATOR_BLOCK);
     }
 
     public void propagatingRedstoneLamp(DeferredBlock<Block> dBlock) {
@@ -314,8 +316,6 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
                 rotation_x = 270;
             }
 
-
-
             bld.part().modelFile(model_on).rotationY(rotation_y).rotationX(rotation_x).addModel()
                     .condition(ModBlockProperties.ALL_FACING, dir)
                     .condition(ModBlockProperties.POWERED, true);
@@ -323,6 +323,36 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
             bld.part().modelFile(model_off).rotationY(rotation_y).rotationX(rotation_x).addModel()
                     .condition(ModBlockProperties.ALL_FACING, dir)
                     .condition(ModBlockProperties.POWERED, false);
+        }
+    }
+
+    private void amethyst_resonator(DeferredBlock<Block> dBlock) {
+        Block block = dBlock.get();
+        String name = getBlockName(block);
+
+        MultiPartBlockStateBuilder bld = getMultipartBuilder(block);
+
+        ModelFile model_off = models().getExistingFile(modLoc("block/" + name));
+        ModelFile model_on = models().getExistingFile(modLoc("block/" + name + "_on"));
+
+        for (Direction dir : ModBlockProperties.ALL_FACING.getPossibleValues()) {
+
+            int rotation_y = ((int) dir.toYRot()) % 360;
+
+            int rotation_x = 90;
+            if (dir == Direction.DOWN) {
+                rotation_x = 0;
+            } else if (dir == Direction.UP) {
+                rotation_x = 180;
+            }
+
+            bld.part().modelFile(model_off).rotationY(rotation_y).rotationX(rotation_x).addModel()
+                    .condition(ModBlockProperties.ALL_FACING, dir)
+                    .condition(ModBlockProperties.LIT, false);
+
+            bld.part().modelFile(model_on).rotationY(rotation_y).rotationX(rotation_x).addModel()
+                    .condition(ModBlockProperties.ALL_FACING, dir)
+                    .condition(ModBlockProperties.LIT, true);
         }
     }
 }

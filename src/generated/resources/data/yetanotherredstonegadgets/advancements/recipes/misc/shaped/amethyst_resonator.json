@@ -1,0 +1,82 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:gems/amethyst"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:storage_blocks/redstone"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "forge:stone"
+          }
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tag_forge:gems/amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:gems/amethyst"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_tag_forge:stone": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_tag_forge:storage_blocks/redstone": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:storage_blocks/redstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "yetanotherredstonegadgets:shaped/amethyst_resonator"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tag_forge:gems/amethyst",
+      "has_tag_forge:storage_blocks/redstone",
+      "has_tag_forge:stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "yetanotherredstonegadgets:shaped/amethyst_resonator"
+    ]
+  }
+}
