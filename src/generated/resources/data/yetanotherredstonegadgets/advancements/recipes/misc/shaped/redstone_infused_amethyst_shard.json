@@ -7,14 +7,14 @@
           "type": "neoforge:not",
           "value": {
             "type": "neoforge:tag_empty",
-            "tag": "forge:dusts/redstone"
+            "tag": "forge:gems/amethyst"
           }
         },
         {
           "type": "neoforge:not",
           "value": {
             "type": "neoforge:tag_empty",
-            "tag": "forge:stone"
+            "tag": "forge:dusts/redstone"
           }
         }
       ]
@@ -22,18 +22,6 @@
   ],
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_item_yetanotherredstonegadgets:redstone_infused_amethyst_shard": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "yetanotherredstonegadgets:redstone_infused_amethyst_shard"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_tag_forge:dusts/redstone": {
       "conditions": {
         "items": [
@@ -44,11 +32,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_tag_forge:stone": {
+    "has_tag_forge:gems/amethyst": {
       "conditions": {
         "items": [
           {
-            "tag": "forge:stone"
+            "tag": "forge:gems/amethyst"
           }
         ]
       },
@@ -56,7 +44,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "yetanotherredstonegadgets:shaped/amethyst_resonator"
+        "recipe": "yetanotherredstonegadgets:shaped/redstone_infused_amethyst_shard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -64,14 +52,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_item_yetanotherredstonegadgets:redstone_infused_amethyst_shard",
-      "has_tag_forge:dusts/redstone",
-      "has_tag_forge:stone"
+      "has_tag_forge:gems/amethyst",
+      "has_tag_forge:dusts/redstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "yetanotherredstonegadgets:shaped/amethyst_resonator"
+      "yetanotherredstonegadgets:shaped/redstone_infused_amethyst_shard"
     ]
   }
 }

@@ -232,7 +232,7 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         ResourceLocation bottom_off_texture = blockLoc(resonator_block).withSuffix("_bottom");
         ResourceLocation bottom_on_texture = blockLoc(resonator_block).withSuffix("_bottom_on");
 
-        ResourceLocation amethyst_texture = mcLoc("block/calibrated_sculk_sensor_amethyst");
+        ResourceLocation amethyst_texture = modLoc("block/resonator_amethyst");
 
         BlockModelBuilder builder_off = getBuilder(name);
         builder_off.parent(getExistingFile(mcLoc("block/block")));

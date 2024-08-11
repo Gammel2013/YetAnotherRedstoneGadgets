@@ -128,12 +128,24 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 pRecipeOutput,
                 ModItems.AMETHYST_RESONATOR_ITEM.get(),
                 1,
-                " a ",
-                "rrr",
+                "rar",
                 "sss",
-                new ShapedRecipeIngredient('a', Tags.Items.GEMS_AMETHYST),
-                new ShapedRecipeIngredient('r', Tags.Items.STORAGE_BLOCKS_REDSTONE),
+                "",
+                new ShapedRecipeIngredient('a', ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM.get()),
+                new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
                 new ShapedRecipeIngredient('s', Tags.Items.STONE)
+        );
+
+        shaped(
+                toResourceLocation("redstone_infused_amethyst_shard"),
+                pRecipeOutput,
+                ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM.get(),
+                1,
+                "a",
+                "r",
+                "",
+                new ShapedRecipeIngredient('a', Tags.Items.GEMS_AMETHYST),
+                new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE)
         );
     }
 }

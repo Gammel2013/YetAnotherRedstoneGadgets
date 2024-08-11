@@ -46,7 +46,7 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add("block.yargmod.calibratedobserver.filter", "Observing property '%1$s'");
         add("block.yargmod.calibratedobserver.nothingtosee", "The block in front has no observable properties");
 
-        // Normal blocks
+        // Blocks
         add(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Purple Propagating Redstone Lamp");
         add(ModBlocks.BLUE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Blue Propagating Redstone Lamp");
         add(ModBlocks.RED_PROPAGATING_REDSTONE_LAMP_BLOCK, "Red Propagating Redstone Lamp");
@@ -57,6 +57,9 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add(ModBlocks.LONG_RANGE_OBSERVER_BLOCK, "Long Range Observer");
         add(ModBlocks.CALIBRATED_OBSERVER_BLOCK, "Calibrated Observer");
         add(ModBlocks.AMETHYST_RESONATOR_BLOCK, "Amethyst Resonator");
+
+        // Items
+        add(ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM, "Redstone Infused Amethyst Shard");
 
         checkMissingTranslations();
     }

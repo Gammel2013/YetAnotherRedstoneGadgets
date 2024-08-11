@@ -29,6 +29,7 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.SEVEN_SEGMENT_LAMP_ITEM);
         pOutput.accept(ModItems.LONG_RANGE_OBSERVER_ITEM);
         pOutput.accept(ModItems.CALIBRATED_OBSERVER_ITEM);
+        pOutput.accept(ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM);
         pOutput.accept(ModItems.AMETHYST_RESONATOR_ITEM);
     }
 

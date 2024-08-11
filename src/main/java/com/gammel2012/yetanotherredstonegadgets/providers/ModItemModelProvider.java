@@ -62,5 +62,7 @@ public class ModItemModelProvider extends BaseItemModelProvider {
                 getItemName(ModItems.AMETHYST_RESONATOR_ITEM.get()),
                 blockLoc(ModItems.AMETHYST_RESONATOR_ITEM.get())
         );
+
+        buildBasicItem(ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM);
     }
 }

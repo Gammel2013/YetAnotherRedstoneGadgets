@@ -120,7 +120,7 @@
   "render_type": "minecraft:cutout",
   "textures": {
     "bottom": "yetanotherredstonegadgets:block/amethyst_resonator_bottom",
-    "crystal": "minecraft:block/calibrated_sculk_sensor_amethyst",
+    "crystal": "yetanotherredstonegadgets:block/resonator_amethyst",
     "particle": "yetanotherredstonegadgets:block/amethyst_resonator_top",
     "side": "yetanotherredstonegadgets:block/amethyst_resonator_side",
     "top": "yetanotherredstonegadgets:block/amethyst_resonator_top"

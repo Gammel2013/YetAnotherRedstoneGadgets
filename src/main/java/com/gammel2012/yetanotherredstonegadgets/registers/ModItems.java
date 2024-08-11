@@ -27,6 +27,10 @@ public class ModItems {
 
     public static final DeferredItem<BlockItem> AMETHYST_RESONATOR_ITEM = registerSimpleBlockItem(ModBlocks.AMETHYST_RESONATOR_BLOCK);
 
+    public static final DeferredItem<Item> REDSTONE_INFUSED_AMETHYST_SHARD_ITEM = registerSimpleItem(
+            "redstone_infused_amethyst_shard"
+    );
+
     public static void register(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
     }
@@ -38,5 +42,13 @@ public class ModItems {
 
     private static DeferredItem<BlockItem> registerSimpleBlockItem(DeferredBlock<Block> block) {
         return registerSimpleBlockItem(block, new Item.Properties());
+    }
+
+    private static DeferredItem<Item> registerSimpleItem(String name, Item.Properties properties) {
+        return  ITEMS.registerSimpleItem(name, properties);
+    }
+
+    private static DeferredItem<Item> registerSimpleItem(String name) {
+        return  ITEMS.registerSimpleItem(name, new Item.Properties());
     }
 }
