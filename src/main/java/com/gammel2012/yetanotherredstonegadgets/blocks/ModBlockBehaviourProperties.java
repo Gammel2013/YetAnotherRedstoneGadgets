@@ -6,6 +6,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 public class ModBlockBehaviourProperties {
 
@@ -37,7 +38,8 @@ public class ModBlockBehaviourProperties {
             .mapColor(MapColor.COLOR_LIGHT_GRAY)
             .strength(0.3f)
             .sound(SoundType.STONE)
-            .noOcclusion();
+            .noOcclusion()
+            .pushReaction(PushReaction.DESTROY);
 
     public static final PropertiesWrapper LONG_RANGE_OBSERVER_PROPERTIES = PropertiesWrapper.of()
             .mapColor(MapColor.STONE)
