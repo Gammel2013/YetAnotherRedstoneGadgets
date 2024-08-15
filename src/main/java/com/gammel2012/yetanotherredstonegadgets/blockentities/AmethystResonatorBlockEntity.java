@@ -12,22 +12,29 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class AmethystResonatorBlockEntity extends BlockEntity implements TickingBE {
+
+    private static final Random RANDOM = new Random();
 
     private boolean has_ticked = false;
     private int sending_timer = 0;
     private int receiving_timer = 0;
 
+    private int checking_offset;
+
     private List<AmethystResonatorBlockEntity> RESONATORS_IN_RANGE = new ArrayList<>();
 
     public AmethystResonatorBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntityTypes.AMETHYST_RESONATOR.get(), pPos, pBlockState);
+        checking_offset = RANDOM.nextInt(0, 10);
     }
 
     @Override
     public void tickServer(Level lvl, BlockPos pos, BlockState st, BlockEntity blockEntity) {
-        if (!has_ticked) {
+
+        if (!has_ticked && (lvl.getGameTime() % 10) == checking_offset) {
             getResonatorsInRange();
             has_ticked = true;
         }

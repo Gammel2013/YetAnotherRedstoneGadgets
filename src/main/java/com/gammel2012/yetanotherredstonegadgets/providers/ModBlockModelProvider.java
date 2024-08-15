@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
+import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
@@ -54,8 +55,8 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
         registerDialLampModels(ModBlocks.SEVEN_SEGMENT_LAMP_BLOCK);
         registerObserver(ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get());
         registerObserver(ModBlocks.CALIBRATED_OBSERVER_BLOCK.get());
-
         registerAmethystResonator(ModBlocks.AMETHYST_RESONATOR_BLOCK.get());
+        registerAnalogReader(ModBlocks.REGION_ANALOG_READER_BLOCK.get());
     }
 
     private void registerRedstoneDividerModels() {
@@ -293,5 +294,29 @@ public class ModBlockModelProvider extends BaseBlockModelProvider {
                 .rotation().origin(8, 6, 8).axis(Direction.Axis.Y).angle(-45);
         builder_on.texture("crystal", amethyst_texture);
         builder_on.renderType("cutout");
+    }
+
+    private void registerAnalogReader(Block analog_reader) {
+        String name = getBlockName(analog_reader);
+
+        ResourceLocation front_texture = blockLoc(analog_reader).withSuffix("_front");
+        ResourceLocation side_texture = blockLoc(analog_reader).withSuffix("_side");
+        ResourceLocation back_texture = blockLoc(analog_reader).withSuffix("_back");
+
+        BlockModelBuilder builder = getBuilder(name);
+        builder.parent(getExistingFile(mcLoc("block/block")))
+                .element().from(0, 0, 0).to(16, 16, 16)
+                    .face(Direction.UP).texture("#side").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+                    .face(Direction.DOWN).texture("#side").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+                    .face(Direction.NORTH).texture("#front").end()
+                    .face(Direction.SOUTH).texture("#back").end()
+                    .face(Direction.EAST).texture("#side").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+                    .face(Direction.WEST).texture("#side").end();
+
+
+        builder.texture("particle", front_texture)
+                .texture("front", front_texture)
+                .texture("side", side_texture)
+                .texture("back", back_texture);
     }
 }

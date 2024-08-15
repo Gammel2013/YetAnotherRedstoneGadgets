@@ -4,6 +4,7 @@ import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import com.gammel2012.yetanotherredstonegadgets.blockentities.AmethystResonatorBlockEntity;
 import com.gammel2012.yetanotherredstonegadgets.blockentities.CalibratedObserverBlockEntity;
 import com.gammel2012.yetanotherredstonegadgets.blockentities.LongRangeObserverBlockEntity;
+import com.gammel2012.yetanotherredstonegadgets.blockentities.RegionAnalogReaderBlockEntity;
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -37,6 +38,15 @@ public class ModBlockEntityTypes {
             () -> new BlockEntityType<>(
                     AmethystResonatorBlockEntity::new,
                     ImmutableSet.of(ModBlocks.AMETHYST_RESONATOR_BLOCK.get()),
+                    null
+            )
+    );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RegionAnalogReaderBlockEntity>> REGION_ANALOG_READER = BLOCK_ENTITY_TYPES.register(
+            "region_analog_reader",
+            () -> new BlockEntityType<>(
+                    RegionAnalogReaderBlockEntity::new,
+                    ImmutableSet.of(ModBlocks.REGION_ANALOG_READER_BLOCK.get()),
                     null
             )
     );

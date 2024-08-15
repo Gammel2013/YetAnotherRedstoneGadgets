@@ -64,5 +64,10 @@ public class ModItemModelProvider extends BaseItemModelProvider {
         );
 
         buildBasicItem(ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM);
+
+        withExistingParent(
+                getItemName(ModItems.REGION_ANALOG_READER_ITEM.get()),
+                blockLoc(ModItems.REGION_ANALOG_READER_ITEM.get())
+        );
     }
 }

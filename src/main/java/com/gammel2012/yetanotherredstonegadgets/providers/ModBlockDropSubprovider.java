@@ -33,8 +33,8 @@ public class ModBlockDropSubprovider extends BaseLootSubprovider {
         addSelfDroppingBlock(ModBlocks.REDSTONE_DIAL_BLOCK);
         addSelfDroppingBlock(ModBlocks.LONG_RANGE_OBSERVER_BLOCK);
         addSelfDroppingBlock(ModBlocks.CALIBRATED_OBSERVER_BLOCK);
-
         addSelfDroppingBlock(ModBlocks.AMETHYST_RESONATOR_BLOCK);
+        addSelfDroppingBlock(ModBlocks.REGION_ANALOG_READER_BLOCK);
     }
 
     public LootPool.Builder dropSelf(DeferredBlock<Block> dBlock) {

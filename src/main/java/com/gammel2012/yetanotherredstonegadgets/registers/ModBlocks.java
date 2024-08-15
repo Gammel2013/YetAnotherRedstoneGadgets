@@ -74,6 +74,12 @@ public class ModBlocks {
             ModBlockBehaviourProperties.AMETHYST_RESONATOR_PROPERTIES.toProperties()
     );
 
+    public static final DeferredBlock<Block> REGION_ANALOG_READER_BLOCK = registerBlock(
+            "region_analog_reader",
+            RegionAnalogReaderBlock::new,
+            ModBlockBehaviourProperties.LONG_RANGE_OBSERVER_PROPERTIES.toProperties()
+    );
+
     public static void register(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);
     }

@@ -35,7 +35,7 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         // Creative tab
         add("itemGroup.YetAnotherRedstoneGadgets.tab", "Yet Another Redstone Gadgets");
 
-        // Display messages for the divider
+        // Display messages
         add("block.yargmod.divider.round_up", "Rounding up");
         add("block.yargmod.divider.round_down", "Rounding down");
         add("block.yargmod.divider.divider", "Dividing by %1$s");
@@ -45,6 +45,8 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add("block.yargmod.longobserver.range", "Observing block %1$sm in front");
         add("block.yargmod.calibratedobserver.filter", "Observing property '%1$s'");
         add("block.yargmod.calibratedobserver.nothingtosee", "The block in front has no observable properties");
+
+        add("block.yargmod.area_reader.area", "Observing a %1$s area in front");
 
         // Blocks
         add(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK, "Purple Propagating Redstone Lamp");
@@ -57,6 +59,7 @@ public class ModEnglishUSLanguageProvider extends LanguageProvider {
         add(ModBlocks.LONG_RANGE_OBSERVER_BLOCK, "Long Range Observer");
         add(ModBlocks.CALIBRATED_OBSERVER_BLOCK, "Calibrated Observer");
         add(ModBlocks.AMETHYST_RESONATOR_BLOCK, "Amethyst Resonator");
+        add(ModBlocks.REGION_ANALOG_READER_BLOCK, "Region Analog Reader");
 
         // Items
         add(ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM, "Redstone Infused Amethyst Shard");

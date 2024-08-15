@@ -147,5 +147,19 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 new ShapedRecipeIngredient('a', Tags.Items.GEMS_AMETHYST),
                 new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE)
         );
+
+        shaped(
+                toResourceLocation("region_analog_reader"),
+                pRecipeOutput,
+                ModItems.REGION_ANALOG_READER_ITEM.get(),
+                1,
+                "sqs",
+                "qel",
+                "sqs",
+                new ShapedRecipeIngredient('s', Tags.Items.STONE),
+                new ShapedRecipeIngredient('q', Tags.Items.GEMS_QUARTZ),
+                new ShapedRecipeIngredient('e', Tags.Items.ENDER_PEARLS),
+                new ShapedRecipeIngredient('l', Tags.Items.GEMS_LAPIS)
+        );
     }
 }

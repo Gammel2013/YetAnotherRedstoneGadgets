@@ -14,9 +14,11 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.client.model.generators.MultiPartBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import org.apache.commons.lang3.stream.IntStreams;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class ModBlockStateProvider extends BaseBlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -44,6 +46,8 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
         observer(ModBlocks.CALIBRATED_OBSERVER_BLOCK);
 
         amethyst_resonator(ModBlocks.AMETHYST_RESONATOR_BLOCK);
+
+        region_analog_reader(ModBlocks.REGION_ANALOG_READER_BLOCK);
     }
 
     public void propagatingRedstoneLamp(DeferredBlock<Block> dBlock) {
@@ -353,6 +357,30 @@ public class ModBlockStateProvider extends BaseBlockStateProvider {
             bld.part().modelFile(model_on).rotationY(rotation_y).rotationX(rotation_x).addModel()
                     .condition(ModBlockProperties.ALL_FACING, dir)
                     .condition(ModBlockProperties.LIT, true);
+        }
+    }
+
+    private void region_analog_reader(DeferredBlock<Block> dBlock) {
+        Block block = dBlock.get();
+        String name = getBlockName(block);
+
+        MultiPartBlockStateBuilder bld = getMultipartBuilder(block);
+
+        ModelFile model = models().getExistingFile(modLoc("block/" + name));
+
+        for (Direction dir : ModBlockProperties.ALL_FACING.getPossibleValues()) {
+
+            int rotation_y = ((int) dir.toYRot() + 180) % 360;
+
+            int rotation_x = 0;
+            if (dir == Direction.DOWN) {
+                rotation_x = 90;
+            } else if (dir == Direction.UP) {
+                rotation_x = 270;
+            }
+
+            bld.part().modelFile(model).rotationY(rotation_y).rotationX(rotation_x).addModel()
+                    .condition(ModBlockProperties.ALL_FACING, dir);
         }
     }
 }

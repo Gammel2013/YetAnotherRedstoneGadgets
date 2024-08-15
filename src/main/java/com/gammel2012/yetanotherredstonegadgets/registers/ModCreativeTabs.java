@@ -31,6 +31,7 @@ public class ModCreativeTabs {
         pOutput.accept(ModItems.CALIBRATED_OBSERVER_ITEM);
         pOutput.accept(ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM);
         pOutput.accept(ModItems.AMETHYST_RESONATOR_ITEM);
+        pOutput.accept(ModItems.REGION_ANALOG_READER_ITEM);
     }
 
     public static void register(IEventBus modEventBus) {

@@ -25,6 +25,8 @@ public class ModItems {
     public static final DeferredItem<BlockItem> LONG_RANGE_OBSERVER_ITEM = registerSimpleBlockItem(ModBlocks.LONG_RANGE_OBSERVER_BLOCK);
     public static final DeferredItem<BlockItem> CALIBRATED_OBSERVER_ITEM = registerSimpleBlockItem(ModBlocks.CALIBRATED_OBSERVER_BLOCK);
 
+    public static final DeferredItem<BlockItem> REGION_ANALOG_READER_ITEM = registerSimpleBlockItem(ModBlocks.REGION_ANALOG_READER_BLOCK);
+
     public static final DeferredItem<BlockItem> AMETHYST_RESONATOR_ITEM = registerSimpleBlockItem(ModBlocks.AMETHYST_RESONATOR_BLOCK);
 
     public static final DeferredItem<Item> REDSTONE_INFUSED_AMETHYST_SHARD_ITEM = registerSimpleItem(

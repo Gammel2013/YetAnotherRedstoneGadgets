@@ -1,4 +1,5 @@
 {
+  "block.yargmod.area_reader.area": "Observing a %1$s area in front",
   "block.yargmod.calibratedobserver.filter": "Observing property '%1$s'",
   "block.yargmod.calibratedobserver.nothingtosee": "The block in front has no observable properties",
   "block.yargmod.dial.power": "Output strength: %1$s",
@@ -15,6 +16,7 @@
   "block.yetanotherredstonegadgets.redstone_dial": "Redstone Dial",
   "block.yetanotherredstonegadgets.redstone_dial_lamp": "Redstone Dial Lamp",
   "block.yetanotherredstonegadgets.redstone_divider": "Redstone Divider",
+  "block.yetanotherredstonegadgets.region_analog_reader": "Region Analog Reader",
   "block.yetanotherredstonegadgets.seven_segment_lamp": "Seven Segment Lamp",
   "item.yetanotherredstonegadgets.redstone_infused_amethyst_shard": "Redstone Infused Amethyst Shard",
   "itemGroup.YetAnotherRedstoneGadgets": "Yet Another Redstone Gadgets (YARG)",

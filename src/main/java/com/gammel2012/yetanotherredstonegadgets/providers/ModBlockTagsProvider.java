@@ -27,7 +27,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 BlockTags.MINEABLE_WITH_PICKAXE,
                 ModBlocks.LONG_RANGE_OBSERVER_BLOCK.get(),
                 ModBlocks.CALIBRATED_OBSERVER_BLOCK.get(),
-                ModBlocks.AMETHYST_RESONATOR_BLOCK.get()
+                ModBlocks.AMETHYST_RESONATOR_BLOCK.get(),
+                ModBlocks.REGION_ANALOG_READER_BLOCK.get()
         );
     }
 

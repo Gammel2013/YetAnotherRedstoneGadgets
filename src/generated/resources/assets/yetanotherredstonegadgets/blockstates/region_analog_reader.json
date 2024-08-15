@@ -1,0 +1,59 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/region_analog_reader"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/region_analog_reader",
+        "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/region_analog_reader",
+        "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/region_analog_reader",
+        "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/region_analog_reader",
+        "x": 270,
+        "y": 90
+      },
+      "when": {
+        "facing": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "yetanotherredstonegadgets:block/region_analog_reader",
+        "x": 90,
+        "y": 90
+      },
+      "when": {
+        "facing": "down"
+      }
+    }
+  ]
+}

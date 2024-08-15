@@ -2,6 +2,7 @@
   "values": [
     "yetanotherredstonegadgets:long_range_observer",
     "yetanotherredstonegadgets:calibrated_observer",
-    "yetanotherredstonegadgets:amethyst_resonator"
+    "yetanotherredstonegadgets:amethyst_resonator",
+    "yetanotherredstonegadgets:region_analog_reader"
   ]
 }
