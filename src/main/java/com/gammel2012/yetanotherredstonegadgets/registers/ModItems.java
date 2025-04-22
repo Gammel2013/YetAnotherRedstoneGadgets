@@ -51,6 +51,6 @@ public class ModItems {
     }
 
     private static DeferredItem<Item> registerSimpleItem(String name) {
-        return  ITEMS.registerSimpleItem(name, new Item.Properties());
+        return  registerSimpleItem(name, new Item.Properties());
     }
 }

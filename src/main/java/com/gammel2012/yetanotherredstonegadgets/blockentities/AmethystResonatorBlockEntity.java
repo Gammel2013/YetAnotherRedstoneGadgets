@@ -34,6 +34,8 @@ public class AmethystResonatorBlockEntity extends BlockEntity implements Ticking
     @Override
     public void tickServer(Level lvl, BlockPos pos, BlockState st, BlockEntity blockEntity) {
 
+        // Space out fetching resonators in range over up to 10 ticks, to mitigate lag spikes when placing/loading
+        // resonators in bulk.
         if (!has_ticked && (lvl.getGameTime() % 10) == checking_offset) {
             getResonatorsInRange();
             has_ticked = true;

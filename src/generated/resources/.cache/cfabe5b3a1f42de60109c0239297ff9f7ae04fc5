@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-09T22:19:45.6543927	Item Models: yetanotherredstonegadgets
+// 1.20.4	2024-08-13T13:22:16.1329609	Item Models: yetanotherredstonegadgets
 c189c0697676f2c7400ef4fb3e052448ce7b89a8 assets/yetanotherredstonegadgets/models/item/amethyst_resonator.json
 edb0f621c85a1c80a0307c9ae030e97065a91a1a assets/yetanotherredstonegadgets/models/item/blue_propagating_redstone_lamp.json
 6a3be7da574c5b6d01244080064533426f6fa6ae assets/yetanotherredstonegadgets/models/item/calibrated_observer.json
@@ -7,5 +7,7 @@ c8eff6feaa44d68ef7a5b6e52dd696b04df61baa assets/yetanotherredstonegadgets/models
 636d4f7a6394290287dd31fe8f17de144337cc65 assets/yetanotherredstonegadgets/models/item/redstone_dial.json
 c9216591fba20b392cb985a8450b5008095895ef assets/yetanotherredstonegadgets/models/item/redstone_dial_lamp.json
 5f2685bd551969cf2b8ee97518994b3ca261714b assets/yetanotherredstonegadgets/models/item/redstone_divider.json
+f4d94ce6ade0ee2e16c31f79562e4f2c6bd2f59e assets/yetanotherredstonegadgets/models/item/redstone_infused_amethyst_shard.json
 ee14b566e40c92ff54aff64eb6e09395b8ecdd31 assets/yetanotherredstonegadgets/models/item/red_propagating_redstone_lamp.json
+21a8436cee53974f4cfab877e6c4886aaa16d405 assets/yetanotherredstonegadgets/models/item/region_analog_reader.json
 5eaf22a7013a646c6713fa8926f6e01da8d42725 assets/yetanotherredstonegadgets/models/item/seven_segment_lamp.json
