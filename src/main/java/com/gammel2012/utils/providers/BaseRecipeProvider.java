@@ -28,8 +28,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider {
 
     protected final String modid;
 
-    public BaseRecipeProvider(PackOutput pOutput, String modid) {
-        super(pOutput);
+    public BaseRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> registries, String modid) {
+        super(pOutput, registries);
         this.modid = modid;
     }
 

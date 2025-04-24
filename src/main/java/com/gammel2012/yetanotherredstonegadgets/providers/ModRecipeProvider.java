@@ -3,15 +3,18 @@ package com.gammel2012.yetanotherredstonegadgets.providers;
 import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModItems;
 import com.gammel2012.utils.providers.BaseRecipeProvider;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 
+import java.util.concurrent.CompletableFuture;
+
 public class ModRecipeProvider extends BaseRecipeProvider {
-    public ModRecipeProvider(PackOutput pOutput) {
-        super(pOutput, YetAnotherRedstoneGadgets.MODID);
+    public ModRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> registries) {
+        super(pOutput, registries, YetAnotherRedstoneGadgets.MODID);
     }
 
     @Override
