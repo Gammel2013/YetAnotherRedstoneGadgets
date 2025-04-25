@@ -22,8 +22,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
-// TODO: Switch to ResourceKeys
-
 public abstract class TextureProvider implements DataProvider {
 
     public static final ExistingFileHelper.ResourceType TEXTURE = new ExistingFileHelper.ResourceType(PackType.CLIENT_RESOURCES, ".png", "textures");

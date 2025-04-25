@@ -18,8 +18,6 @@ import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
-// TODO: Switch to ResourceKeys
-
 public class ModBlockDropSubprovider extends BaseLootSubprovider {
     private BiConsumer<ResourceKey<LootTable>, LootTable.Builder> output;
 

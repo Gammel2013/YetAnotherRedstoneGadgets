@@ -23,8 +23,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 
-// TODO: Replace NBTIngredient
-
 public abstract class BaseRecipeProvider extends RecipeProvider {
 
     protected final String modid;

@@ -18,8 +18,6 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import java.util.HashMap;
 import java.util.concurrent.CompletableFuture;
 
-// TODO: Switch to ResourceKeys
-
 public abstract class BaseLootSubprovider implements LootTableSubProvider {
 
     private HolderLookup.Provider registries;
