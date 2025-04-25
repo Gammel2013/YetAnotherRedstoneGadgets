@@ -18,7 +18,6 @@ import net.neoforged.neoforge.common.conditions.AndCondition;
 import net.neoforged.neoforge.common.conditions.ICondition;
 import net.neoforged.neoforge.common.conditions.NotCondition;
 import net.neoforged.neoforge.common.conditions.TagEmptyCondition;
-import net.neoforged.neoforge.common.crafting.NBTIngredient;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.*;
@@ -190,16 +189,6 @@ public abstract class BaseRecipeProvider extends RecipeProvider {
             super(ingredient);
             this.count = count;
         }
-
-        public ShapelessRecipeIngredient(Item item, int count, CompoundTag nbt) {
-            super(item, nbt);
-            this.count = count;
-        }
-
-        public ShapelessRecipeIngredient(ItemStack item, int count) {
-            super(item);
-            this.count = count;
-        }
     }
 
     public class ShapedRecipeIngredient extends RecipeIngredient {
@@ -218,16 +207,6 @@ public abstract class BaseRecipeProvider extends RecipeProvider {
 
         public ShapedRecipeIngredient(Character symbol, Ingredient ingredient) {
             super(ingredient);
-            this.symbol = symbol;
-        }
-
-        public ShapedRecipeIngredient(Character symbol, Item item, CompoundTag nbt) {
-            super(item, nbt);
-            this.symbol = symbol;
-        }
-
-        public ShapedRecipeIngredient(Character symbol, ItemStack stack) {
-            super(stack);
             this.symbol = symbol;
         }
     }
@@ -257,18 +236,6 @@ public abstract class BaseRecipeProvider extends RecipeProvider {
             this.ingredient = ingredient;
             this.criterion = has(item_from_ingredient);
             this.criterion_name = "has_tag_" + item_from_ingredient.toString();
-        }
-
-        public RecipeIngredient(Item item, CompoundTag nbt) {
-            this.ingredient = NBTIngredient.of(false, nbt, item);
-            this.criterion = has(item);
-            this.criterion_name = "has_tag_" + item.toString();
-        }
-
-        public RecipeIngredient(ItemStack stack) {
-            this.ingredient = NBTIngredient.of(false, stack);
-            this.criterion = has(stack.getItem());
-            this.criterion_name = "has_item_" + stack.getItem().toString();
         }
     }
 }
