@@ -22,6 +22,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
+// TODO: Switch to ResourceKeys
+
 public abstract class TextureProvider implements DataProvider {
 
     public static final ExistingFileHelper.ResourceType TEXTURE = new ExistingFileHelper.ResourceType(PackType.CLIENT_RESOURCES, ".png", "textures");
@@ -98,7 +100,7 @@ public abstract class TextureProvider implements DataProvider {
     }
 
     public void saveImage(String name, BufferedImage img) {
-        ResourceLocation rl = new ResourceLocation(this.modid, getSubfolder() + "/" + name);
+        ResourceLocation rl = ResourceLocation.fromNamespaceAndPath(this.modid, getSubfolder() + "/" + name);
         this.existingFileHelper.trackGenerated(rl, TEXTURE);
         this.generatedTextures.put(rl, img);
     }

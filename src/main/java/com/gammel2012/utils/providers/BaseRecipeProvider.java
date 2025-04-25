@@ -24,6 +24,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 
+// TODO: Replace NBTIngredient
+
 public abstract class BaseRecipeProvider extends RecipeProvider {
 
     protected final String modid;
@@ -34,7 +36,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider {
     }
 
     public ResourceLocation toResourceLocation(String s) {
-        return new ResourceLocation(modid, s);
+        return ResourceLocation.fromNamespaceAndPath(modid, s);
     }
 
     public static void shaped(

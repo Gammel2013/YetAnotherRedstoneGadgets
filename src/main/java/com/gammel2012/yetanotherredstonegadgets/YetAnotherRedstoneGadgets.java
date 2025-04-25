@@ -97,7 +97,7 @@ public class YetAnotherRedstoneGadgets
             generator.addProvider(true, new ModItemTagsProvider(output, lookupProvider, blockTags.contentsGetter()));
             generator.addProvider(true, new ModRecipeProvider(output, lookupProvider));
             generator.addProvider(true, new ModEnglishUSLanguageProvider(output));
-            generator.addProvider(true, new ModLootTableProvider(output));
+            generator.addProvider(true, new ModLootTableProvider(output, lookupProvider));
         } catch (RuntimeException e) {
             LOGGER.error("Failed to gather data", e);
         }
