@@ -1,0 +1,62 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:stones"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:gems/quartz"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:ender_pearls"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:gems/lapis"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": {
+      "tag": "c:ender_pearls"
+    },
+    "l": {
+      "tag": "c:gems/lapis"
+    },
+    "q": {
+      "tag": "c:gems/quartz"
+    },
+    "s": {
+      "tag": "c:stones"
+    }
+  },
+  "pattern": [
+    "sqs",
+    "qel",
+    "sqs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "yetanotherredstonegadgets:region_analog_reader"
+  }
+}

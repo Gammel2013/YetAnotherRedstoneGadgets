@@ -1,8 +1,6 @@
 package com.gammel2012.utils;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import org.antlr.v4.runtime.misc.OrderedHashSet;

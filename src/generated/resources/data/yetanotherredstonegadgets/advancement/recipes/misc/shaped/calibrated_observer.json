@@ -1,0 +1,57 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:gems/amethyst"
+          }
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_item_minecraft:observer": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:observer"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_tag_c:gems/amethyst": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:gems/amethyst"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "yetanotherredstonegadgets:shaped/calibrated_observer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tag_c:gems/amethyst",
+      "has_item_minecraft:observer"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "yetanotherredstonegadgets:shaped/calibrated_observer"
+    ]
+  }
+}

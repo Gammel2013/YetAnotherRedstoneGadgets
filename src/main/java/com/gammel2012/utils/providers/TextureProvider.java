@@ -2,7 +2,6 @@ package com.gammel2012.utils.providers;
 
 import com.google.common.hash.Hashing;
 import com.google.common.hash.HashingOutputStream;
-
 import net.minecraft.Util;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
@@ -98,7 +97,7 @@ public abstract class TextureProvider implements DataProvider {
     }
 
     public void saveImage(String name, BufferedImage img) {
-        ResourceLocation rl = new ResourceLocation(this.modid, getSubfolder() + "/" + name);
+        ResourceLocation rl = ResourceLocation.fromNamespaceAndPath(this.modid, getSubfolder() + "/" + name);
         this.existingFileHelper.trackGenerated(rl, TEXTURE);
         this.generatedTextures.put(rl, img);
     }

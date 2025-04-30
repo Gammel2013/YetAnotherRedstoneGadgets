@@ -1,6 +1,5 @@
 package com.gammel2012.utils;
 
-import com.gammel2012.yetanotherredstonegadgets.blockentities.LongRangeObserverBlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;

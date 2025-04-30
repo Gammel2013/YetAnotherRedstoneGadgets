@@ -1,7 +1,8 @@
 package com.gammel2012.yetanotherredstonegadgets.providers;
 
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -16,10 +17,14 @@ import java.util.Arrays;
 import java.util.function.BiConsumer;
 
 public class ModBlockDropSubprovider extends BaseLootSubprovider {
-    private BiConsumer<ResourceLocation, LootTable.Builder> output;
+    private BiConsumer<ResourceKey<LootTable>, LootTable.Builder> output;
+
+    public ModBlockDropSubprovider(HolderLookup.Provider registries) {
+        super(registries);
+    }
 
     @Override
-    public void generate(BiConsumer<ResourceLocation, LootTable.Builder> pOutput) {
+    public void generate(BiConsumer<ResourceKey<LootTable>, LootTable.Builder> pOutput) {
         this.output = pOutput;
 
         addSelfDroppingBlock(ModBlocks.PURPLE_PROPAGATING_REDSTONE_LAMP_BLOCK);
@@ -42,9 +47,9 @@ public class ModBlockDropSubprovider extends BaseLootSubprovider {
         return poolWithFixedItems(item).when(ExplosionCondition.survivesExplosion());
     }
 
-    public ResourceLocation getTableLocation(DeferredBlock<Block> dBlock) {
+    public ResourceKey<LootTable> getTableKey(DeferredBlock<Block> dBlock) {
         String path = dBlock.getId().getPath();
-        return toResourceLocation(path);
+        return toResourceKey(path);
     }
 
     @Override
@@ -53,8 +58,8 @@ public class ModBlockDropSubprovider extends BaseLootSubprovider {
     }
 
     public void addTable(DeferredBlock<Block> dBlock, LootTable.Builder table) {
-        ResourceLocation loc = getTableLocation(dBlock);
-        this.output.accept(loc, table);
+        ResourceKey<LootTable> key = getTableKey(dBlock);
+        this.output.accept(key, table);
     }
 
     public void addSelfDroppingBlock(DeferredBlock<Block> dBlock, LootPool.Builder... bonusDrops) {

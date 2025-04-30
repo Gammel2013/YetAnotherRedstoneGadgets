@@ -1,9 +1,9 @@
 package com.gammel2012.yetanotherredstonegadgets.providers;
 
+import com.gammel2012.utils.providers.BaseBlockStateProvider;
 import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import com.gammel2012.yetanotherredstonegadgets.blocks.ModBlockProperties;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
-import com.gammel2012.utils.providers.BaseBlockStateProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -14,11 +14,9 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.client.model.generators.MultiPartBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import org.apache.commons.lang3.stream.IntStreams;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 public class ModBlockStateProvider extends BaseBlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {

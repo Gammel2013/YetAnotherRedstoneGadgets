@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:dusts/redstone"
+          }
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:tag_empty",
+            "tag": "c:stones"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "yetanotherredstonegadgets:redstone_infused_amethyst_shard"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    },
+    "s": {
+      "tag": "c:stones"
+    }
+  },
+  "pattern": [
+    "rar",
+    "sss"
+  ],
+  "result": {
+    "count": 1,
+    "id": "yetanotherredstonegadgets:amethyst_resonator"
+  }
+}

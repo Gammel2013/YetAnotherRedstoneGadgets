@@ -12,6 +12,7 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -70,7 +71,7 @@ public class YetAnotherRedstoneGadgets
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
         @SubscribeEvent
@@ -94,9 +95,9 @@ public class YetAnotherRedstoneGadgets
             generator.addProvider(true, new ModItemModelProvider(output, existingFileHelper));
             generator.addProvider(true, blockTags);
             generator.addProvider(true, new ModItemTagsProvider(output, lookupProvider, blockTags.contentsGetter()));
-            generator.addProvider(true, new ModRecipeProvider(output));
+            generator.addProvider(true, new ModRecipeProvider(output, lookupProvider));
             generator.addProvider(true, new ModEnglishUSLanguageProvider(output));
-            generator.addProvider(true, new ModLootTableProvider(output));
+            generator.addProvider(true, new ModLootTableProvider(output, lookupProvider));
         } catch (RuntimeException e) {
             LOGGER.error("Failed to gather data", e);
         }

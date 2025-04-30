@@ -1,8 +1,8 @@
 package com.gammel2012.yetanotherredstonegadgets.providers;
 
+import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModItems;
-import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;

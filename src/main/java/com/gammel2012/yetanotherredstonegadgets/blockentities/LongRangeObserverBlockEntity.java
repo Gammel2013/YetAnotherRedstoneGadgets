@@ -5,7 +5,6 @@ import com.gammel2012.yetanotherredstonegadgets.blocks.LongRangeObserverBlock;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
