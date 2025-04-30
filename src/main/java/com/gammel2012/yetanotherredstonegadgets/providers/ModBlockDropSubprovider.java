@@ -3,7 +3,6 @@ package com.gammel2012.yetanotherredstonegadgets.providers;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -15,7 +14,6 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
 public class ModBlockDropSubprovider extends BaseLootSubprovider {

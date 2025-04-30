@@ -2,7 +2,6 @@ package com.gammel2012.utils.providers;
 
 import com.google.common.hash.Hashing;
 import com.google.common.hash.HashingOutputStream;
-
 import net.minecraft.Util;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;

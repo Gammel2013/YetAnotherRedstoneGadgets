@@ -16,7 +16,6 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 
 import java.util.HashMap;
-import java.util.concurrent.CompletableFuture;
 
 public abstract class BaseLootSubprovider implements LootTableSubProvider {
 

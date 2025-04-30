@@ -1,16 +1,14 @@
 package com.gammel2012.yetanotherredstonegadgets.providers;
 
+import com.gammel2012.utils.providers.BaseBlockModelProvider;
 import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModBlocks;
-import com.gammel2012.utils.providers.BaseBlockModelProvider;
 import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
-import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
