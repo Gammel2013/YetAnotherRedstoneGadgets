@@ -78,11 +78,7 @@ public class RedstoneDialBlock extends Block {
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
-
-        Level pLevel = pContext.getLevel();
-        BlockPos place_pos = pContext.getClickedPos();
         BlockState state = this.defaultBlockState().setValue(FACING_DIRECTION, pContext.getHorizontalDirection());
-
         return state;
     }
 
