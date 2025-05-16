@@ -1,13 +1,7 @@
 package com.gammel2012.utils;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.Enchantment;
-
-import java.util.Collection;
-import java.util.Map;
 
 public class DisplayItemsGeneratorHelper {
 

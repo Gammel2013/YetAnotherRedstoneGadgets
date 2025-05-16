@@ -1,17 +1,19 @@
 package com.gammel2012.yetanotherredstonegadgets.providers;
 
+import com.gammel2012.utils.providers.BaseRecipeProvider;
 import com.gammel2012.yetanotherredstonegadgets.YetAnotherRedstoneGadgets;
 import com.gammel2012.yetanotherredstonegadgets.registers.ModItems;
-import com.gammel2012.utils.providers.BaseRecipeProvider;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 
+import java.util.concurrent.CompletableFuture;
+
 public class ModRecipeProvider extends BaseRecipeProvider {
-    public ModRecipeProvider(PackOutput pOutput) {
-        super(pOutput, YetAnotherRedstoneGadgets.MODID);
+    public ModRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> registries) {
+        super(pOutput, registries, YetAnotherRedstoneGadgets.MODID);
     }
 
     @Override
@@ -58,7 +60,7 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 "rrr",
                 "srs",
                 new ShapedRecipeIngredient('r', Items.REDSTONE_TORCH),
-                new ShapedRecipeIngredient('s', Tags.Items.STONE)
+                new ShapedRecipeIngredient('s', Tags.Items.STONES)
         );
 
         shaped(
@@ -69,7 +71,7 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 "rrr",
                 "rtr",
                 "sss",
-                new ShapedRecipeIngredient('s', Tags.Items.STONE),
+                new ShapedRecipeIngredient('s', Tags.Items.STONES),
                 new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
                 new ShapedRecipeIngredient('t', Items.REDSTONE_TORCH)
         );
@@ -133,7 +135,7 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 "",
                 new ShapedRecipeIngredient('a', ModItems.REDSTONE_INFUSED_AMETHYST_SHARD_ITEM.get()),
                 new ShapedRecipeIngredient('r', Tags.Items.DUSTS_REDSTONE),
-                new ShapedRecipeIngredient('s', Tags.Items.STONE)
+                new ShapedRecipeIngredient('s', Tags.Items.STONES)
         );
 
         shaped(
@@ -156,7 +158,7 @@ public class ModRecipeProvider extends BaseRecipeProvider {
                 "sqs",
                 "qel",
                 "sqs",
-                new ShapedRecipeIngredient('s', Tags.Items.STONE),
+                new ShapedRecipeIngredient('s', Tags.Items.STONES),
                 new ShapedRecipeIngredient('q', Tags.Items.GEMS_QUARTZ),
                 new ShapedRecipeIngredient('e', Tags.Items.ENDER_PEARLS),
                 new ShapedRecipeIngredient('l', Tags.Items.GEMS_LAPIS)

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": []
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": {
+      "item": "minecraft:echo_shard"
+    },
+    "o": {
+      "item": "minecraft:observer"
+    }
+  },
+  "pattern": [
+    " e ",
+    "eoe",
+    " e "
+  ],
+  "result": {
+    "count": 1,
+    "id": "yetanotherredstonegadgets:long_range_observer"
+  }
+}
